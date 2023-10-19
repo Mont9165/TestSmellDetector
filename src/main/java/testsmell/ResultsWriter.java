@@ -20,7 +20,7 @@ public class ResultsWriter {
      */
     private ResultsWriter(String repoName) throws IOException {
         String time =  String.valueOf(Calendar.getInstance().getTimeInMillis());
-        outputFile = MessageFormat.format("{0}/{1}.{2}", "results/smells", repoName, "csv");
+        outputFile = MessageFormat.format("{0}/{1}/{2}.{3}", "results/smells", repoName, "smells_number", "csv");
         writer = new FileWriter(outputFile,false);
     }
 

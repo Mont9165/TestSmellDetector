@@ -31,3 +31,6 @@ test-smells.csv
 
 .DS_Store
 results
+
+repo
+test_repos

@@ -21,7 +21,7 @@ public class MappingResultsWriter {
     private MappingResultsWriter(String repoName) throws IOException {
         this.repoName = repoName;
 //        String time =  String.valueOf(Calendar.getInstance().getTimeInMillis());
-        outputFile = MessageFormat.format("{0}/{1}.{2}", "results/mappings", repoName, "csv");
+        outputFile = MessageFormat.format("{0}/{1}/{2}.{3}", "results/mappings", repoName, "mapping", "csv");
         writer = new FileWriter(outputFile,false);
     }
 

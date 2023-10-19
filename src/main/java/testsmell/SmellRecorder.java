@@ -83,7 +83,7 @@ public class SmellRecorder {
     }
 
     public void recordSmells(String repoName) throws IOException {
-        String outputFile = MessageFormat.format("{0}/{1}.{2}", "results/smells", repoName, "json");
+        String outputFile = MessageFormat.format("{0}/{1}/{2}.{3}", "results/smells", repoName, "smells_result", "json");
         FileWriter writer = new FileWriter(outputFile,false);
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
