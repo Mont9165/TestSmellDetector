@@ -7,6 +7,7 @@ import file_detector.FileWalker;
 import file_mapping.MappingDetector;
 import file_mapping.MappingResultsWriter;
 import file_mapping.MappingTestFile;
+import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.api.CheckoutCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -14,10 +15,7 @@ import org.eclipse.jgit.lib.Repository;
 import testsmell.*;
 import thresholds.DefaultThresholds;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -29,6 +27,67 @@ import java.util.*;
 
 public class Main {
     static List<MappingTestFile> testFiles;
+    static List<String> processCommitList = new ArrayList<>();
+
+    public static void main(String[] args) throws IOException, GitAPIException {
+//        TODO　git clone. checkout, createDirectories change, results/smellから特定のメソッドのスメルを取り出す
+
+        FileReader jsonReader = new FileReader("input/change_5project.json");
+        FileReader csv = new FileReader("input/commits_list.csv");
+        CSVReader csvReader = new CSVReaderBuilder(csv).build();
+        List<String[]> records = csvReader.readAll();
+
+        JsonObject jsonObject = readJson(jsonReader);
+
+//        processRecords(records);
+
+
+        processJson(jsonObject, records);
+    }
+
+//    private static void processRecords(List<String[]> records) throws GitAPIException, IOException {
+//        for (String[] record : records){
+//            if (record[0].equals("repository_name")) continue;
+//            processRecord(record);
+//        }
+//    }
+
+//    private static void processRecord(String[] record) throws GitAPIException, IOException {
+//        String repoDir = "repo/" + record[0];
+//        System.out.println(repoDir);
+//        File inputFile = new File(repoDir);
+//        Repository repository = openRepository(record[1]+".git", inputFile);
+//        Git git = new Git(repository);
+//
+//        processCommit(git, repoDir, record[2]);
+//    }
+//    private static void processCommit(Git git, String repoDir, String commitID) throws GitAPIException, IOException {
+//        checkoutRepository(git, commitID);
+//        collectMethodSmells(repoDir, commitID);
+//        processCommitList.add(commitID);
+//    }
+
+    private static void processCommit(String repoDir, List<String[]> records, Set<String> processCommitList, String commitID) throws Exception {
+        String[] result = readCommitRecord(repoDir, records, commitID); // 0:repo_name
+
+        List<String> commitList = new ArrayList<>();
+        commitList.add(commitID);   // commit ID
+        commitList.add(result[1]);  // parent commit ID
+
+        File inputFile = new File(repoDir);
+        Repository repository = openRepository(result[0], inputFile);
+        Git git = new Git(repository);
+
+
+        for (String commit : commitList) {
+            if (!processCommitList.contains(commit)) {
+                checkoutRepository(git, commit);
+                collectMethodSmells(repoDir, commit);
+                processCommitList.add(commit);
+            }
+        }
+
+    }
 
     public static void detectMappings(String projectDir, String repoName) throws IOException {
         File inputFile = new File(projectDir);
@@ -65,7 +124,7 @@ public class Main {
         }
 
 
-        System.out.println("Saving results. Total lines:" + testFiles.size());
+//        System.out.println("Saving results. Total lines:" + testFiles.size());
         MappingResultsWriter resultsWriter = MappingResultsWriter.createResultsWriter(repoName);
         List<String> columnValues;
         for (int i = 0; i < testFiles.size(); i++) {
@@ -75,7 +134,7 @@ public class Main {
             resultsWriter.writeLine(columnValues);
         }
 
-        System.out.println("Test File Mapping Completed!");
+//        System.out.println("Test File Mapping Completed!");
     }
 
     private static void findSrcDirectory(File projectDir, List<File> srcFolder) {
@@ -91,19 +150,17 @@ public class Main {
 //                            System.out.println("Found /src/main directory at: " + mainDirectory.getAbsolutePath());
                         }
                     }
-
                     // サブディレクトリに再帰的に探索
                     if (file.isDirectory()) {
                         findSrcDirectory(file, srcFolder);
                     }
                 }
-
             }
         }
     }
 
 
-    public static void detectSmells(String repoName) throws IOException {
+    public static void detectSmells(String repoName) throws IOException, OutOfMemoryError {
         TestSmellDetector testSmellDetector = new TestSmellDetector(new DefaultThresholds());
         String inputFile = MessageFormat.format("{0}/{1}/{2}.{3}", "results/mappings", repoName, "mapping", "csv");
         /*
@@ -155,9 +212,9 @@ public class Main {
         Date date;
         SmellRecorder smellRecorder = new SmellRecorder();
         for (TestFile file : testFiles) {
-            date = new Date();
-            System.out.println(dateFormat.format(date) + " Processing: " + file.getTestFilePath());
-            System.out.println("Processing: " + file.getTestFilePath());
+//            date = new Date();
+//            System.out.println(dateFormat.format(date) + " Processing: " + file.getTestFilePath());
+//            System.out.println("Processing: " + file.getTestFilePath());
 
             //detect smells
             tempFile = testSmellDetector.detectSmells(file);
@@ -185,61 +242,41 @@ public class Main {
         System.out.println("Smell Detection Finished");
     }
 
-    public static void main(String[] args) throws IOException, GitAPIException {
-//        TODO　git clone. checkout, createDirectoies change, results/smellから特定のメソッドのスメルを取り出す
-
-        FileReader jsonReader = new FileReader("input/change_methods.json");
-        FileReader csv = new FileReader("input/commits_list.csv");
-        CSVReader csvReader = new CSVReaderBuilder(csv).build();
-        List<String[]> records = csvReader.readAll();
-
-        JsonObject jsonObject = readJson(jsonReader);
-        processJson(jsonObject, records);
-    }
-
     private static void processJson(JsonObject jsonObject, List<String[]> records) {
-        List<String> processCommitList = new ArrayList<>();
+//      TODO json使う意味ない
+        Set<String> processCommitList = new HashSet<>();
+        List<String> processDirList = new ArrayList<>();
 
         for (Map.Entry<String, JsonElement> repoEntry : jsonObject.entrySet()) {
             String repoDir = repoEntry.getKey();
-
             JsonObject commitData = repoEntry.getValue().getAsJsonObject();
             for (Map.Entry<String, JsonElement> commitEntry : commitData.entrySet()) {
-
+                String commitID = commitEntry.getKey();
                 try {
-                    processCommitEntry(repoDir, records, processCommitList, commitEntry);
+//                    TODO recordsだけでいけるのでは？
+                    processCommit(repoDir, records, processCommitList, commitID);
+                    saveRepositoryAndCommit(processDirList, processCommitList);
                 } catch (Exception e) {
-                    throw new RuntimeException(e);
+                    continue;
                 }
             }
         }
     }
 
-    private static void processCommitEntry(String repoDir, List<String[]> records, List<String> processCommitList, Map.Entry<String, JsonElement> commitEntry) throws Exception {
-        String commitID = commitEntry.getKey();
-        String[] result = readCommitRecord(repoDir, records, commitID); // 0:repo_name
-
-        List<String> commitList = new ArrayList<>();
-        commitList.add(commitID);   // commit ID
-        commitList.add(result[1]);  // parent commit ID
-
-        File inputFile = new File(repoDir);
-        Repository repository = openRepository(result[0], inputFile);
-        Git git = new Git(repository);
-
-        //TODO commitId & parentId の差分を出す
-
-        for (String commit : commitList) {
-            if (!processCommitList.contains(commit)) {
-                checkoutRepository(git, commit);
-                collectMethodSmells(repoDir, commit);
-                processCommitList.add(commit);
+    private static void saveRepositoryAndCommit(List<String> processDirList, Set<String> processCommitList) {
+        String fileName = "test.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            // リポジトリの名前をファイルに書き込む
+            writer.write("Commit ID:\n");
+            for (String repoName : processCommitList) {
+                writer.write(repoName + "\n");
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
     }
 
-    private static JsonObject readJson(FileReader jsonReader) {
+    static JsonObject readJson(FileReader jsonReader) {
         Gson gson = new Gson();
         JsonElement element = gson.fromJson(jsonReader, JsonElement.class);
         JsonObject jsonObject = element.getAsJsonObject();
@@ -251,8 +288,8 @@ public class Main {
             Repository repository = Git.open(inputFile).getRepository();
             return repository;
         } catch (Exception e) {
+            FileUtils.deleteDirectory(inputFile);
             System.out.println("Clone Repository");
-
             cloneRepository(repositoryUrl, inputFile.toString());
             Repository repository = Git.open(inputFile).getRepository();
             return repository;
@@ -294,8 +331,12 @@ public class Main {
         Files.createDirectories(Paths.get("results/mappings/" + repoName));
         Files.createDirectories(Paths.get("results/smells/" + repoName));
 
-        detectMappings(repoDir, repoName);
-        detectSmells(repoName);
+        try {
+            detectMappings(repoDir, repoName);
+            detectSmells(repoName);
+        } catch (OutOfMemoryError e) {
+            System.err.println("Out of Memory: " + repoName + "commitID: " + commitID);
+        }
     }
 
 }

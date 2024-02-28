@@ -1,0 +1,1280 @@
+{
+    "repo/apache/commons-math": {
+        "50ca244b38e130923b5426092895c587e207f4a2": {
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapterTest.java": [
+                "testStartSimplexInsideRange",
+                "testStartSimplexOutsideRange",
+                "testOptimumOutsideRange",
+                "testUnbounded",
+                "testHalfBounded"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerHedarFukushimaTest.java": [
+                "testParabola2D",
+                "testRosenbrock2D",
+                "testRosenbrock5D",
+                "testPowell",
+                "doTest"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerMultiDirectionalTest.java": [
+                "testBoundsUnsupported",
+                "testMath283",
+                "testFourExtremaMinimize1",
+                "testFourExtremaMaximize1",
+                "testFourExtremaMinimize2",
+                "testFourExtremaMaximize2",
+                "testPowell",
+                "doTest"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerNelderMeadTest.java": [
+                "testBoundsUnsupported",
+                "value",
+                "testLeastSquares1",
+                "testLeastSquares2",
+                "testLeastSquares3",
+                "testMaxIterations",
+                "testFourExtremaMinimize1",
+                "testFourExtremaMaximize1",
+                "testFourExtremaMinimize2",
+                "testFourExtremaMaximize2",
+                "doTest"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexTest.java": [
+                "testTriangle",
+                "testJavadocExample",
+                "testCentroid",
+                "testAsList",
+                "testReplaceLast1",
+                "testReplaceLast2",
+                "testNewPoint"
+            ]
+        },
+        "46a0c3ae4140fd34cf8479362192bddb7b7b3e38": {
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultiStartMultivariateOptimizerTest.java": [
+                "testCircleFitting",
+                "testRosenbrock"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionMappingAdapterTest.java": [
+                "testStartSimplexInsideRange",
+                "testOptimumOutsideRange",
+                "testUnbounded",
+                "testHalfBounded"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapterTest.java": [
+                "testStartSimplexInsideRange",
+                "testStartSimplexOutsideRange",
+                "testOptimumOutsideRange",
+                "testUnbounded",
+                "testHalfBounded"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerMultiDirectionalTest.java": [
+                "testBoundsUnsupported",
+                "testMath283",
+                "testFourExtremaMinimize1",
+                "testFourExtremaMaximize1",
+                "testFourExtremaMinimize2",
+                "testFourExtremaMaximize2",
+                "testRosenbrock",
+                "testPowell",
+                "testRosen",
+                "testEllipse",
+                "testElliRotated",
+                "testCigar",
+                "testCigTab",
+                "testSphere",
+                "testTablet",
+                "testDiffPow",
+                "testSsDiffPow",
+                "testTwoAxes",
+                "testAckley",
+                "testRastrigin",
+                "doTest"
+            ],
+            "commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerNelderMeadTest.java": [
+                "testBoundsUnsupported",
+                "value",
+                "testLeastSquares1",
+                "testLeastSquares2",
+                "testLeastSquares3",
+                "testMaxIterations",
+                "testFourExtremaMinimize1",
+                "testFourExtremaMaximize1",
+                "testFourExtremaMaximize2",
+                "testPowell",
+                "testRosen",
+                "testElliRotated",
+                "testTwoAxes",
+                "testFourExtremaMinimize2",
+                "testRosenbrock",
+                "testCigTab",
+                "testSphere",
+                "testEllipse",
+                "testDiffPow",
+                "testSsDiffPow",
+                "testAckley",
+                "doTest",
+                "testRastrigin"
+            ]
+        },
+        "c7196c8f20aaa8095fad98cd465105080ff6c6a7": {
+            "src/test/java/org/apache/commons/math3/linear/ArrayRealVectorTest.java": [
+                "getNorm"
+            ],
+            "src/test/java/org/apache/commons/math3/linear/RealVectorAbstractTest.java": [
+                "doTestCosine",
+                "testCosineSameType",
+                "testCosineMixedTypes",
+                "testCosineLeftNullVector",
+                "testCosineRightNullVector",
+                "testCosineDimensionMismatch",
+                "testMisc",
+                "testPredicates",
+                "testSerial",
+                "testMinMax"
+            ],
+            "src/test/java/org/apache/commons/math3/linear/SparseRealVectorTest.java": [
+                "getNorm"
+            ]
+        },
+        "34adc606601cb578486d4a019b4655c5aff607b5": {
+            "src/test/java/org/apache/commons/math4/stat/interval/WilsonScoreIntervalTest.java": [
+                "testMath1421"
+            ]
+        },
+        "cf2b9e7479179bff9111df99b7fa9f30a1bd5a8b": {
+            "src/test/java/org/apache/commons/math4/analysis/interpolation/FieldHermiteInterpolatorTest.java": [
+                "testZero",
+                "testQuadratic",
+                "testMixedDerivatives",
+                "testWikipedia",
+                "testOnePointParabola",
+                "testEmptySampleValue",
+                "testEmptySampleDerivative",
+                "testDuplicatedAbscissa"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/MatrixUtilsTest.java": [
+                "asDfp"
+            ]
+        },
+        "b468defc676cddd3af2953f5e033f449d9cc661d": {
+            "src/test/java/org/apache/commons/math/random/AbstractRandomGeneratorTest.java": [
+                "testNextLong2",
+                "makeGenerator"
+            ],
+            "src/test/java/org/apache/commons/math/random/BitsStreamGeneratorTest.java": [
+                "makeGenerator",
+                "setSeed",
+                "next",
+                "nextBits"
+            ],
+            "src/test/java/org/apache/commons/math/random/RandomDataTest.java": [
+                "testNextPoissonConsistency"
+            ],
+            "src/test/java/org/apache/commons/math/random/RandomGeneratorAbstractTest.java": [
+                "makeGenerator",
+                "setUp",
+                "testNextIntDirect",
+                "testNextLongDirect",
+                "testNextBooleanDirect",
+                "testNextFloatDirect",
+                "testDoubleDirect",
+                "testFloatDirect",
+                "testNextIntNeg",
+                "testNextInt2",
+                "testNextLong2",
+                "testNexBoolean2",
+                "testNexBytes"
+            ],
+            "src/test/java/org/apache/commons/math/random/Well1024aTest.java": [
+                "testReferenceCode"
+            ]
+        },
+        "c1ba07bb65f41afed35c12c12b40b4e8d03a408a": {
+            "src/test/java/org/apache/commons/math3/fitting/PolynomialCurveFitterTest.java": [
+                "testFit",
+                "testNoError",
+                "testSmallError",
+                "testRedundantSolvable",
+                "testLargeSample",
+                "checkUnsolvableProblem",
+                "buildRandomPolynomial"
+            ]
+        },
+        "b8d96de5871d938f678b4702c2fcc306bdf1f34d": {
+            "src/test/java/org/apache/commons/math4/linear/ArrayFieldVectorTest.java": [
+                "testConstructors",
+                "testDataInOut",
+                "testMapFunctions",
+                "testBasicFunctions",
+                "testMisc",
+                "testSerial",
+                "testZeroVectors",
+                "testOuterProduct",
+                "visit",
+                "start",
+                "end",
+                "testWalkInDefaultOrderPreservingVisitor1",
+                "testWalkInDefaultOrderPreservingVisitor3",
+                "testWalkInOptimizedOrderPreservingVisitor1",
+                "testWalkInOptimizedOrderPreservingVisitor3",
+                "testWalkInDefaultOrderChangingVisitor1",
+                "testWalkInDefaultOrderChangingVisitor3",
+                "testWalkInOptimizedOrderChangingVisitor1",
+                "testWalkInOptimizedOrderChangingVisitor3"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/BlockFieldMatrixTest.java": [
+                "testDimensions",
+                "testCopyFunctions",
+                "testAdd",
+                "testPlusMinus",
+                "testMultiply",
+                "testSeveralBlocks",
+                "testMultiply2",
+                "testTrace",
+                "testScalarAdd",
+                "testOperate",
+                "testOperateLarge",
+                "testOperatePremultiplyLarge",
+                "testMath209",
+                "testTranspose",
+                "testPremultiplyVector",
+                "testPremultiply",
+                "testGetVectors",
+                "testGetEntry",
+                "testExamples",
+                "testGetSubMatrix",
+                "checkGetSubMatrix",
+                "testGetSetMatrixLarge",
+                "testCopySubMatrix",
+                "checkCopy",
+                "testGetRowMatrix",
+                "testSetRowMatrix",
+                "testGetSetRowMatrixLarge",
+                "testGetColumnMatrix",
+                "testSetColumnMatrix",
+                "testGetSetColumnMatrixLarge",
+                "testGetRowVector",
+                "testSetRowVector",
+                "testGetSetRowVectorLarge",
+                "testGetColumnVector",
+                "testSetColumnVector",
+                "testGetSetColumnVectorLarge",
+                "testGetRow",
+                "testSetRow",
+                "testGetSetRowLarge",
+                "testGetColumn",
+                "testSetColumn",
+                "testGetSetColumnLarge",
+                "checkArrays",
+                "testEqualsAndHashCode",
+                "testToString",
+                "testSetSubMatrix",
+                "testWalk",
+                "testSerial",
+                "visit",
+                "createRandomMatrix"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/FieldLUDecompositionTest.java": [
+                "testDimensions",
+                "testPAEqualLU",
+                "testLLowerTriangular",
+                "testUUpperTriangular",
+                "testPPermutation",
+                "testSingular",
+                "testMatricesValues1",
+                "testMatricesValues2"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/FieldLUSolverTest.java": [
+                "createDfpMatrix",
+                "testSingular",
+                "testSolveDimensionErrors",
+                "testSolveSingularityErrors",
+                "testSolve",
+                "testDeterminant",
+                "getDeterminant"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/FieldMatrixImplTest.java": [
+                "testDimensions",
+                "testCopyFunctions",
+                "testAdd",
+                "testPlusMinus",
+                "testMultiply",
+                "testMultiply2",
+                "testPower",
+                "testTrace",
+                "testScalarAdd",
+                "testOperate",
+                "testMath209",
+                "testTranspose",
+                "testPremultiplyVector",
+                "testPremultiply",
+                "testGetVectors",
+                "testGetEntry",
+                "testExamples",
+                "testGetSubMatrix",
+                "checkGetSubMatrix",
+                "testCopySubMatrix",
+                "checkCopy",
+                "testGetRowMatrix",
+                "testSetRowMatrix",
+                "testGetColumnMatrix",
+                "testSetColumnMatrix",
+                "testGetRowVector",
+                "testSetRowVector",
+                "testGetColumnVector",
+                "testSetColumnVector",
+                "testGetRow",
+                "testSetRow",
+                "testGetColumn",
+                "testSetColumn",
+                "checkArrays",
+                "testEqualsAndHashCode",
+                "testToString",
+                "testSetSubMatrix",
+                "testWalk",
+                "testSerial",
+                "visit",
+                "splitLU",
+                "permuteRows"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/MatrixUtilsTest.java": [
+                "testcreateFieldMatrix",
+                "testCreateRowFieldMatrix",
+                "testCreateColumnFieldMatrix",
+                "checkIdentityFieldMatrix",
+                "testcreateFieldIdentityMatrix",
+                "asDfp",
+                "testSolveLowerTriangularSystem"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/SparseFieldMatrixTest.java": [
+                "testDimensions",
+                "testCopyFunctions",
+                "testAdd",
+                "testAddFail",
+                "testPlusMinus",
+                "testMultiply",
+                "testMultiply2",
+                "testTrace",
+                "testScalarAdd",
+                "testOperate",
+                "testMath209",
+                "testTranspose",
+                "testPremultiplyVector",
+                "testPremultiply",
+                "testGetVectors",
+                "testGetEntry",
+                "testExamples",
+                "testSubMatrix",
+                "testGetRowMatrix",
+                "testGetColumnMatrix",
+                "testGetRowVector",
+                "testGetColumnVector",
+                "testEqualsAndHashCode",
+                "testSetSubMatrix",
+                "assertClose",
+                "createSparseMatrix"
+            ],
+            "src/test/java/org/apache/commons/math4/linear/SparseFieldVectorTest.java": [
+                "testMapFunctions",
+                "testBasicFunctions",
+                "testOuterProduct",
+                "testMisc",
+                "testPredicates",
+                "assertEquals",
+                "assertClose",
+                "visit",
+                "end",
+                "testWalkInOptimizedOrderPreservingVisitor1",
+                "testWalkInOptimizedOrderPreservingVisitor3",
+                "testWalkInOptimizedOrderChangingVisitor1",
+                "testWalkInOptimizedOrderChangingVisitor3"
+            ],
+            "src/test/java/org/apache/commons/math4/util/OpenIntToFieldTest.java": [
+                "setUp",
+                "generate",
+                "createFromJavaMap",
+                "testPutAndGetWith0ExpectedSize",
+                "testPutAndGetWithExpectedSize",
+                "assertPutAndGet",
+                "testPutAndGet",
+                "testPutAbsentOnExisting",
+                "testPutOnExisting",
+                "testGetAbsent",
+                "testGetFromEmpty",
+                "testRemove",
+                "testRemove2",
+                "testRemoveFromEmpty",
+                "testRemoveAbsent",
+                "generateAbsent",
+                "testCopy",
+                "testContainsKey",
+                "testIterator",
+                "testConcurrentModification",
+                "testPutKeysWithCollisions",
+                "testPutKeysWithCollision2"
+            ]
+        },
+        "5e59617d85a2fb8eaab0bd84711b3e48b698abe6": {
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/MapRankingTest.java": [
+                "testFindClosestNeuron",
+                "testRankPrecondition",
+                "testSort"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/NetworkTest.java": [
+                "testGetFeaturesSize",
+                "testDeleteLink",
+                "testDeleteNeuron",
+                "testIterationOrder",
+                "testCopy",
+                "testSerialize"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/NeuronTest.java": [
+                "testGetIdentifier",
+                "testGetSize",
+                "testGetFeatures",
+                "testCompareAndSetFeatures",
+                "testCopy",
+                "testSerialize"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/oned/NeuronStringTest.java": [
+                "testSegmentNetwork",
+                "testCircleNetwork",
+                "testGetNeighboursWithExclude",
+                "testSerialize"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/KohonenUpdateActionTest.java": [
+                "testUpdate"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/LearningFactorFunctionFactoryTest.java": [
+                "testExponentialDecayPrecondition0",
+                "testExponentialDecayPrecondition1",
+                "testExponentialDecayPrecondition2",
+                "testExponentialDecayPrecondition3",
+                "testExponentialDecayPrecondition4",
+                "testExponentialDecayTrivial",
+                "testQuasiSigmoidDecayPrecondition0",
+                "testQuasiSigmoidDecayPrecondition1",
+                "testQuasiSigmoidDecayPrecondition3",
+                "testQuasiSigmoidDecayPrecondition4",
+                "testQuasiSigmoidDecayTrivial"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/NeighbourhoodSizeFunctionFactoryTest.java": [
+                "testExponentialDecayPrecondition1",
+                "testExponentialDecayPrecondition2",
+                "testExponentialDecayPrecondition3",
+                "testExponentialDecayPrecondition4",
+                "testExponentialDecayTrivial",
+                "testQuasiSigmoidDecayPrecondition1",
+                "testQuasiSigmoidDecayPrecondition3",
+                "testQuasiSigmoidDecayPrecondition4",
+                "testQuasiSigmoidDecayTrivial"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/util/ExponentialDecayFunctionTest.java": [
+                "testTrivial"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/util/QuasiSigmoidDecayFunctionTest.java": [
+                "testTrivial"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/twod/NeuronSquareMesh2DTest.java": [
+                "testGetFeaturesSize",
+                "test2x2Network",
+                "test2x2Network2",
+                "test3x2CylinderNetwork",
+                "test3x2CylinderNetwork2",
+                "test3x3TorusNetwork",
+                "test3x3TorusNetwork2",
+                "test3x3CylinderNetwork",
+                "test3x3CylinderNetwork2",
+                "testConcentricNeighbourhood",
+                "testConcentricNeighbourhood2",
+                "testSerialize",
+                "testGetNeuron",
+                "testGetNeuronAlongDirection",
+                "testGetNeuronAlongDirectionWrappedMap",
+                "testIterator",
+                "testDataVisualization"
+            ],
+            "commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/twod/util/LocationFinderTest.java": [
+                "test2x2Network"
+            ]
+        },
+        "7651a6b14d5be6151432e7d709efd884d9ec3a6c": {
+            "src/test/org/apache/commons/math/ContractableDoubleArrayTest.java": [
+                "testAdd1000",
+                "testSetElementArbitraryExpansion",
+                "testAddElementRolling",
+                "testIllegalInitialCapacity",
+                "testIllegalExpansionFactor"
+            ],
+            "src/test/org/apache/commons/math/DoubleArrayAbstractTest.java": [
+                "testAdd1000",
+                "testGetValues",
+                "testSetElementArbitraryExpansion",
+                "testSetNumberOfElements",
+                "testAddElementRolling"
+            ]
+        },
+        "1a6879a0023a2892323221622e0d1e759613c68f": {
+            "src/test/java/org/apache/commons/math3/fitting/leastsquares/GaussNewtonOptimizerWithQRTest.java": [
+                "testMoreEstimatedParametersUnsorted"
+            ]
+        },
+        "8071ded100328216b09d3e5aecbfc4f9ccad22de": {
+            "src/test/java/org/apache/commons/math3/linear/RealVectorAbstractTest.java": [
+                "doTestCombine",
+                "doTestCombineDimensionMismatch",
+                "testCombineSameType",
+                "testCombineMixedTypes",
+                "testCombineDimensionMismatchSameType",
+                "testCombineDimensionMismatchMixedTypes",
+                "testCombineToSelfSameType",
+                "testCombineToSelfMixedTypes",
+                "testCombineToSelfDimensionMismatchSameType",
+                "testCombineToSelfDimensionMismatchMixedTypes",
+                "testPredicates",
+                "testSerial",
+                "testMinMax",
+                "testCosine",
+                "testCosinePrecondition1",
+                "testCosinePrecondition2",
+                "testCosinePrecondition3",
+                "visit",
+                "start",
+                "end",
+                "testWalkInDefaultOrderPreservingVisitor1",
+                "testWalkInDefaultOrderPreservingVisitor2"
+            ]
+        },
+        "e60e3de47441ca63198c7404b5910d7cffe1c248": {
+            "src/test/org/apache/commons/math/analysis/minimization/BrentMinimizerTest.java": [
+                "suite",
+                "testSinMin",
+                "testQuinticMin",
+                "testMinEndpoints"
+            ]
+        },
+        "b9559bfce972a8b079ebc5ac8b6326a524ce29f8": {
+            "src/test/java/org/apache/commons/math/analysis/solvers/BisectionSolverTest.java": [
+                "testSinZero",
+                "testQuinticZero",
+                "testMath369",
+                "testSetMaximalEvaluationCount"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/BrentSolverTest.java": [
+                "testSinZero",
+                "testQuinticZero",
+                "testRootEndpoints",
+                "testBadEndpoints",
+                "testInitialGuess"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/LaguerreSolverTest.java": [
+                "testLinearFunction",
+                "testQuadraticFunction",
+                "testQuinticFunction",
+                "testParameters"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/MullerSolver2Test.java": [
+                "testSinFunction",
+                "testQuinticFunction",
+                "testExpm1Function",
+                "testParameters"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/MullerSolverTest.java": [
+                "testSinFunction",
+                "testQuinticFunction",
+                "testExpm1Function",
+                "testParameters"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/NewtonSolverTest.java": [
+                "testSinZero",
+                "testQuinticZero"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/RiddersSolverTest.java": [
+                "testSinFunction",
+                "testQuinticFunction",
+                "testExpm1Function",
+                "testParameters"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/SecantSolverTest.java": [
+                "testSinZero",
+                "testQuinticZero",
+                "testRootEndpoints",
+                "testBadEndpoints"
+            ],
+            "src/test/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtilsTest.java": [
+                "testSolveNull",
+                "testSolveBadEndpoints",
+                "testSolveBadAccuracy",
+                "testSolveSin",
+                "testSolveAccuracyNull",
+                "testSolveAccuracySin",
+                "testSolveNoRoot",
+                "testBracketSin",
+                "testBracketEndpointRoot",
+                "testNullFunction",
+                "testBadInitial",
+                "testBadEndpoints",
+                "testBadMaximumIterations",
+                "testMisc"
+            ],
+            "src/test/java/org/apache/commons/math/ode/nonstiff/DormandPrince853IntegratorTest.java": [
+                "testEvents"
+            ],
+            "src/test/java/org/apache/commons/math/ode/nonstiff/HighamHall54IntegratorTest.java": [
+                "resetState",
+                "testEventsNoConvergence"
+            ],
+            "src/test/java/org/apache/commons/math/optimization/general/GaussNewtonOptimizerTest.java": [
+                "testMaxEvaluations",
+                "testCircleFitting"
+            ],
+            "src/test/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizerTest.java": [
+                "testControlParameters",
+                "testCircleFitting",
+                "addPoint",
+                "jacobian",
+                "value"
+            ],
+            "src/test/java/org/apache/commons/math/optimization/general/NonLinearConjugateGradientOptimizerTest.java": [
+                "testTrivial",
+                "testColumnsPermutation",
+                "testNoDependency",
+                "testOneSet",
+                "precondition",
+                "testTwoSets",
+                "testNonInversible",
+                "testIllConditioned",
+                "testMoreEstimatedParametersSimple",
+                "testMoreEstimatedParametersUnsorted",
+                "testRedundantEquations",
+                "testInconsistentEquations",
+                "testCircleFitting",
+                "value"
+            ]
+        }
+    },
+    "repo/zalando/logbook": {
+        "d406857d6db69c29dfcea910aeb99302be08d404": {
+            "logbook-spring-boot-autoconfigure/src/test/java/org/zalando/logbook/autoconfigure/FeignTest.java": [
+                "shouldInitializeFeignLogbookLogger"
+            ]
+        },
+        "5b5213f42fc6a96cb8c179de0bb294cc2e018a70": {
+            "logbook-spring-boot-autoconfigure/src/test/java/org/zalando/logbook/autoconfigure/ExcludeTest.java": [
+                "setUp",
+                "shouldExcludeHealth",
+                "shouldExcludeAdmin",
+                "shouldExcludeAdminWithPath",
+                "shouldExcludeAdminWithQueryParameters"
+            ]
+        },
+        "5116a43450ae501ebc288394702a802c52b92377": {
+            "logbook-core/src/test/java/org/zalando/logbook/HeaderFiltersTest.java": [
+                "shouldRemoveAndChangeHeader"
+            ]
+        }
+    },
+    "repo/apache/commons-io": {
+        "3777327db78077f50f7e7488298588c90c6589de": {
+            "src/test/java/org/apache/commons/io/input/XmlStreamReaderUtilitiesTest.java": [
+                "checkRawEncoding",
+                "calculateRawEncoding",
+                "testCalculateHttpEncoding",
+                "checkHttpEncoding",
+                "calculateHttpEncoding"
+            ],
+            "src/test/java/org/apache/commons/io/input/compatibility/XmlStreamReaderUtilitiesCompatibilityTest.java": [
+                "calculateRawEncoding",
+                "calculateHttpEncoding"
+            ]
+        },
+        "47e16e5bcff38e7cde014b3c78f3f0b4be69739f": {
+            "src/test/java/org/apache/commons/io/input/BOMInputStreamTest.java": [
+                "testReadTwiceWithoutBOM",
+                "testReadTwiceWithBOM",
+                "readBOMInputStreamTwice"
+            ]
+        },
+        "3facb4e0f3720c9b534a244b76ca21ff2d480b19": {
+            "src/test/java/org/apache/commons/io/function/IOSupplierTest.java": [
+                "getThrows",
+                "getThrowsNone"
+            ]
+        },
+        "28103ed74bedf5ba971b54e25d599a2ff6b2b94f": {
+            "src/test/java/org/apache/commons/io/filefilter/AbstractFilterTest.java": [
+                "assertFiltering",
+                "assertFooBarFileFiltering",
+                "equalsLastModified"
+            ],
+            "src/test/java/org/apache/commons/io/filefilter/WildcardFileFilterTest.java": [
+                "testWildcard"
+            ]
+        }
+    },
+    "repo/apache/logging-log4j2": {
+        "c697938585936779a47928f150401cb74967227e": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerThreadNameStrategyTest.java": [
+                "testDefaultThreadNameIsCached",
+                "testUseCachedThreadNameIfInvalidConfig",
+                "testUseUncachedThreadNameIfConfigured",
+                "testUncachedThreadNameStrategyReturnsCurrentThreadName",
+                "testCachedThreadNameStrategyReturnsCachedThreadName"
+            ]
+        },
+        "997e102e468125f8d136042ebecc6dcf769e872f": {
+            "log4j-api/src/test/java/org/apache/log4j/util/StringsTest.java": [
+                "testEMPTY"
+            ]
+        },
+        "ac89d8a360197eda2e9a0a73c0e09ba3d49d93ab": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/lookup/JndiLookupTest.java": [
+                "createBindings",
+                "testLookup"
+            ]
+        },
+        "bb5d55b7da937bff91117e39dd62d46004536d76": {
+            "log4j-streams/src/test/java/org/apache/logging/log4j/streams/AbstractLoggerOutputStreamTest.java": [
+                "createStream",
+                "testClose_HasRemainingData",
+                "testClose_NoRemainingData",
+                "testFlush",
+                "testWrite_ByteArray",
+                "testWrite_ByteArray_Offset_Length",
+                "testWrite_IgnoresWindowsNewline",
+                "testWrite_Int",
+                "testWrite_MultipleLines"
+            ],
+            "log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerFilterOutputStreamTest.java": [
+                "createOutputStreamWrapper"
+            ],
+            "log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerOutputStreamTest.java": [
+                "createOutputStreamWrapper"
+            ],
+            "log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerPrintStreamTest.java": [
+                "createOutputStreamWrapper"
+            ]
+        },
+        "1002626a1cff6a7066ac4142aced47aed459d13b": {
+            "log4j-nosql/src/test/java/org/apache/logging/log4j/nosql/appender/NoSqlDatabaseManagerTest.java": [
+                "answer",
+                "testWriteInternal01",
+                "testWriteInternal02",
+                "testWriteInternal03"
+            ]
+        },
+        "a2d3215ab02d058e226e13b6d75336595d164447": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/MarkerMixInTest.java": [
+                "setUp"
+            ]
+        },
+        "29a6821d0be759d977b4ee90db4c120f03bb6109": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderDataSourceTest.java": [
+                "answer",
+                "createMockDataSource",
+                "testDataSourceConfig"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderFactoryMethodTest.java": [
+                "testFactoryMethodConfig"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2DataSourceTest.java": [
+                "getConnection"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2FactoryMethodTest.java": [
+                "getConnection"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderHsqlDataSourceTest.java": [
+                "getConnection"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderHsqlFactoryMethodTest.java": [
+                "getConnection"
+            ]
+        },
+        "50609f9c70679c03bc94229ea4fdd3d11337bb92": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/mom/JmsAppenderTest.java": [
+                "createBindings",
+                "setUp",
+                "testAppendToQueue",
+                "testJmsQueueAppenderCompatibility",
+                "testJmsTopicAppenderCompatibility"
+            ]
+        },
+        "465e912e14db519693fd2d337ae44fdad1043a2d": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/HostNameTest.java": [
+                "before",
+                "testHostname"
+            ]
+        },
+        "e7e58a32492444b349b3f65f964239e5b8093920": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java": [
+                "createPolicy",
+                "testBuilder",
+                "testFactoryMethod"
+            ]
+        },
+        "ce8713ceea39a899ef0629da4ddd4f7a6e9c6002": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LogEventFactoryTest.java": [
+                "evaluate",
+                "apply",
+                "before",
+                "testEvent"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerDateTest.java": [
+                "before",
+                "testFileName"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java": [
+                "before",
+                "basicFlow",
+                "simpleFlow",
+                "throwing",
+                "catching",
+                "debug",
+                "getLogger_String_MessageFactoryMismatch",
+                "testMessageFactoryMismatch",
+                "testImpliedThrowable",
+                "getLogger_String_MessageFactoryMismatchNull",
+                "testSuppressedThrowable",
+                "debugObject",
+                "mdc",
+                "debugWithParms",
+                "structuredData",
+                "testReconfiguration",
+                "testAdditivity"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerUpdateTest.java": [
+                "before",
+                "resetLevel"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/ShutdownDisabledTest.java": [
+                "testShutdownFlag"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/StrictXMLConfigTest.java": [
+                "setUp",
+                "basicFlow",
+                "simpleFlow",
+                "throwing",
+                "catching",
+                "debugObject",
+                "debugWithParms",
+                "mdc",
+                "debug",
+                "structuredData"
+            ]
+        },
+        "6d2baec217094689f36b53188351aa1b26754dac": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/perftest/MultiThreadPerfTest.java": [
+                "main",
+                "run",
+                "runTestAndPrintResult",
+                "multiThreadedTestRun"
+            ]
+        },
+        "776cf7e3ec02faab09493cadd072b6df0876fd13": {
+            "log4j-api/src/test/java/org/apache/logging/log4j/ThreadContextInheritanceTest.java": [
+                "setupClass",
+                "tearDownClass"
+            ]
+        },
+        "3d5e5587fc99671063e8d63e7c34b5ed915fe370": {
+            "core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderTest.java": [
+                "setUp",
+                "setUpTable",
+                "tearDown",
+                "answer",
+                "testDataSourceConfig",
+                "testDriverManagerConfig",
+                "testFactoryMethodConfig"
+            ],
+            "core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcH2AppenderTest.java": [
+                "getConfigConnection",
+                "newConnection"
+            ],
+            "core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcHyperSqlAppenderTest.java": [
+                "getConfigConnection",
+                "newConnection"
+            ]
+        },
+        "2e092d30127691ded802c9a9aa11c447aa159e0e": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java": [
+                "assertEventCount",
+                "basicFlow",
+                "simpleFlow",
+                "throwing",
+                "catching",
+                "debug",
+                "debugChangeLevel",
+                "debugChangeLevelsChild",
+                "debugChangeLevelsChildDifferentLevels",
+                "debugChangeLevelsMap",
+                "debugChangeRootLevel",
+                "getLogger_String_MessageFactoryMismatch",
+                "getLogger_String_MessageFactoryMismatchNull",
+                "debugObject",
+                "debugWithParms",
+                "mdc",
+                "structuredData",
+                "testAdditivity"
+            ]
+        },
+        "6896181d9101a5b1104f5f509e45b8dcbe4a74aa": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/ThreadedTest.java": [
+                "evaluate",
+                "apply",
+                "getState"
+            ]
+        },
+        "2320eef8118c9b397e0cba37216ce468220ddb5d": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketAppenderReconnectTest.java": [
+                "awaitUntilSucceeds",
+                "verifyLoggingFailure"
+            ]
+        },
+        "2ba1eac3dd67bb76c3a2d174d435cc4de5e18718": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/filter/BurstFilterTest.java": [
+                "setUp",
+                "test"
+            ]
+        },
+        "bd765e2e150eac86a0cb60c3e6e357fec3792acc": {
+            "log4j-api/src/test/java/org/apache/logging/log4j/NoopThreadContextTest.java": [
+                "before",
+                "after"
+            ]
+        },
+        "3faed6d42a6b87e068b431df5fcdf4066cc59a1d": {
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/AbstractLoggerOutputStreamTest.java": [
+                "testFlush"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/AbstractLoggerWriterTest.java": [
+                "testFlush"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedInputStreamCallerInfoTest.java": [
+                "setupStreams"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedInputStreamTest.java": [
+                "createInputStream"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedReaderCallerInfoTest.java": [
+                "setupReader"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedReaderTest.java": [
+                "createReader"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerFilterOutputStreamTest.java": [
+                "createOutputStreamWrapper"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerFilterWriterTest.java": [
+                "createWriterWrapper"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerInputStreamCallerInfoTest.java": [
+                "setupStreams"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerInputStreamTest.java": [
+                "createInputStream",
+                "testClose_NoRemainingData",
+                "testRead_MultipleLines"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerOutputStreamCallerInfoTest.java": [
+                "setupStreams"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerOutputStreamTest.java": [
+                "createOutputStreamWrapper"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintStreamCallerInfoTest.java": [
+                "setupStreams"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintStreamTest.java": [
+                "createOutputStreamWrapper"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintWriterCallerInfoTest.java": [
+                "setupStreams"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintWriterTest.java": [
+                "createWriterWrapper"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerReaderCallerInfoTest.java": [
+                "setupReader"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerReaderTest.java": [
+                "createReader"
+            ],
+            "log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerWriterTest.java": [
+                "createWriterWrapper"
+            ]
+        },
+        "c7be2fe0110da46108b518edda51b5fa358cecb2": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ThrowableProxyTest.java": [
+                "serialize",
+                "testIoContainer",
+                "testIoContainerAsJson",
+                "testIoContainerAsXml"
+            ]
+        },
+        "e339c0c7b48653d644a10d8aa9d7dfe65b5defb1": {
+            "core/src/test/java/org/apache/logging/log4j/core/config/XMLConfigurationTest.java": [
+                "data",
+                "testLogger",
+                "testValidation"
+            ]
+        },
+        "c77ae68701c4de965eb56482d640435f6bce5d89": {
+            "log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4AuthFailureTest.java": [
+                "test"
+            ],
+            "log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4CappedTest.java": [
+                "test"
+            ],
+            "log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4MapMessageTest.java": [
+                "test"
+            ],
+            "log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4Test.java": [
+                "test"
+            ]
+        },
+        "408d0a9ab9e98f8856edccc0a1670b70abaafbdc": {
+            "log4j-api/src/test/java/org/apache/logging/log4j/AbstractSerializationTest.java": [
+                "testSerializationRoundtripEquals",
+                "testSerializationRoundtripNoException"
+            ]
+        },
+        "a121ae06c97e18fd945eb615af87fcb676a52523": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/config/plugins/convert/TypeConvertersTest.java": [
+                "data"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/layout/GelfLayoutTest.java": [
+                "setupClass",
+                "testCompressedLayout",
+                "testLayoutGzipCompression",
+                "testLayoutNoCompression",
+                "testLayoutZlibCompression"
+            ]
+        },
+        "cbf9ef03b86aa9aa0ecb7244710267cea613d473": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/DataSourceConnectionSourceTest.java": [
+                "data",
+                "testNullJndiName",
+                "testEmptyJndiName",
+                "testNoDataSource",
+                "testDataSource"
+            ]
+        },
+        "633de9b5430f3337fecc075e3c1fb5e871c2add4": {
+            "log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeAppenderTest.java": [
+                "setUp"
+            ],
+            "log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeEmbeddedAgentTest.java": [
+                "setUp"
+            ],
+            "log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeEmbeddedAppenderTest.java": [
+                "setUp"
+            ],
+            "log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumePersistentAppenderTest.java": [
+                "setUp"
+            ]
+        },
+        "2fd3880c1d5748feaab5a758bdc32a44f44162b6": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/CollectionLoggingTest.java": [
+                "before",
+                "testSystemProperties",
+                "testSimpleMap",
+                "testAvailableCharsets",
+                "testNetworkInterfaces"
+            ]
+        },
+        "5f69d03a0052fc2f600a1ba9e7baaf3fe524e1c3": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/FileConfigTest.java": [
+                "before",
+                "testReconfiguration"
+            ]
+        },
+        "e362e7bb7c8b844d07b557a0953fa41282c66c62": {
+            "log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3AuthFailureTest.java": [
+                "test"
+            ],
+            "log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3CappedTest.java": [
+                "test"
+            ],
+            "log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3MapMessageTest.java": [
+                "test"
+            ],
+            "log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3Test.java": [
+                "test"
+            ]
+        },
+        "1656f5522acff1480018c402ec86e5cad0bc09a6": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LookupTest.java": [
+                "testHostname"
+            ]
+        },
+        "b4a2b3f9c6bbde673816e9ebe6712dcb79f1ae09": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/AppenderRefLevelJsonTest.java": [
+                "setupClass",
+                "before",
+                "logger1",
+                "logger2",
+                "logger3"
+            ]
+        },
+        "67ca08b2a69408f1d57d7cb8f074f4a1937fc508": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/jackson/LevelMixInTest.java": [
+                "setUp"
+            ]
+        },
+        "97b4a19064bbfd72f650ef74e6291e1978f41350": {
+            "log4j-api-test/src/test/java/org/apache/logging/log4j/LoggerTest.java": [
+                "builder",
+                "isTraceEnabledWithMarker"
+            ]
+        },
+        "d5b5df4dc9a314a2a48cd14223ac9007b4260273": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2FactoryMethodTest.java": [
+                "getConnection"
+            ]
+        },
+        "b1cabb925981a3621c02ff7ce6bd658fd95d8672": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/lookup/InterpolatorTest.java": [
+                "before",
+                "after",
+                "testLookup",
+                "testLookupWithDefaultInterpolator",
+                "assertLookupNotEmpty"
+            ]
+        },
+        "e3e517e5b61056fbdc3e3ea63a6a307aff59fcbc": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LevelTest.java": [
+                "before",
+                "testLevelLogging"
+            ]
+        },
+        "ba48ae7af9349515cd3cbf9a6eefa039b4fc82b7": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/ExtendedLevelTest.java": [
+                "before",
+                "testLevelLogging"
+            ]
+        },
+        "c6e7a59b89e1d9ae8a802235e0f14b76032c4db1": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/ConsoleAppenderTest.java": [
+                "afterClass",
+                "beforeClass",
+                "before",
+                "testConsoleStreamManagerDoesNotClose",
+                "testFollowSystemErr",
+                "testFollowSystemOut",
+                "testFollowSystemPrintStream",
+                "testSystemErrStreamManagerDoesNotClose",
+                "testSystemOutStreamManagerDoesNotClose"
+            ]
+        },
+        "2f612f40c9a577cd1ac9f4712f7b15e04d8dcf43": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java": [
+                "testReconfiguration"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/RollingRandomAccessFileAppenderRolloverTest.java": [
+                "testRollover"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompactFileAppenderTest.java": [
+                "testFlushAtEndOfBatch"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompactFileAsyncAppenderValidationTest.java": [
+                "validateXmlSchemaSimple",
+                "validateXmlSchemaNoEvents"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompleteFileAppenderTest.java": [
+                "testFlushAtEndOfBatch"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlFileAppenderTest.java": [
+                "testFlushAtEndOfBatch"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlRandomAccessFileAppenderTest.java": [
+                "testFlushAtEndOfBatch"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigAutoFlushTest.java": [
+                "testFlushAtEndOfBatch"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigTest.java": [
+                "testAdditivity"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigUseAfterShutdownTest.java": [
+                "testNoErrorIfLogAfterShutdown"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerContextTest.java": [
+                "testNewInstanceReturnsAsyncLogger"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerLocationTest.java": [
+                "testAsyncLogWritesToLog"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerTest.java": [
+                "testAsyncLogWritesToLog"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerThreadContextTest.java": [
+                "testAsyncLogWritesToLog"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerTimestampMessageTest.java": [
+                "testAsyncLogWritesToLog"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerUseAfterShutdownTest.java": [
+                "testNoErrorIfLogAfterShutdown"
+            ]
+        },
+        "05f21996d0c598910e2ddb614453b6b4fb41d0c8": {
+            "log4j-api/src/test/java/org/apache/logging/log4j/osgi/AbstractLoadBundleTest.java": [
+                "getFactory",
+                "testLoadStartStop"
+            ]
+        },
+        "2d1c0f87b11c06adedeed2039279e2574045e060": {
+            "log4j-jul/src/test/java/org/apache/logging/log4j/jul/AbstractLoggerTest.java": [
+                "testLog",
+                "testLogWithCallingClass",
+                "testLogUsingCustomLevel",
+                "testIsLoggable",
+                "testGetName",
+                "testGlobalLoggerName",
+                "testGlobalLogger"
+            ],
+            "log4j-jul/src/test/java/org/apache/logging/log4j/jul/ApiLoggerTest.java": [
+                "setUpClass",
+                "setUp",
+                "testSetLevelFails"
+            ],
+            "log4j-jul/src/test/java/org/apache/logging/log4j/jul/CoreLoggerTest.java": [
+                "setUpClass",
+                "setUp",
+                "tearDown",
+                "testSetLevel"
+            ]
+        },
+        "bdd0e36237a8a30d46b814961140a08181a34ad1": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/AsyncAppenderTest.java": [
+                "rewriteTest",
+                "testException"
+            ]
+        },
+        "5b5abc330c8aa3dc982d4e7948d17b7e819288cb": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketMessageLossTest.java": [
+                "testSocket",
+                "closeQuietly"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketReconnectTest.java": [
+                "testReconnect"
+            ],
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketTest.java": [
+                "testConnect",
+                "closeQuietly"
+            ]
+        },
+        "3c7a91fd119348ccba3c78313302c609122ed53f": {
+            "log4j-core/src/test/java/org/apache/logging/log4j/core/appender/routing/RoutingAppenderWithJndiTest.java": [
+                "after"
+            ]
+        }
+    },
+    "repo/apache/commons-text": {
+        "7ce34ddb3ef0ecd120a7133e710462cf618972ae": {
+            "src/test/java/org/apache/commons/text/StringSubstitutorTest.java": [
+                "testReplaceWeirdPattensNo_JiraText178",
+                "testReplaceWeirdPattens_Partial_JiraText178"
+            ]
+        }
+    }
+}

@@ -54,7 +54,7 @@ public class TestFileDetector {
         CompilationUnit compilationUnit=null;
 
         if(filePath != null){
-            System.out.println("Processing: "+filePath);
+//            System.out.println("Processing: "+filePath);
             classEntity = new ClassEntity(filePath);
             FileInputStream fileInputStream = new FileInputStream(classEntity.getFilePath());
             compilationUnit = JavaParser.parse(fileInputStream);

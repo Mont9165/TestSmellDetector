@@ -1,4 +1,4 @@
-repository_name,repository_url,commit_id,parent_commit_id,commit_url,commit_message,commit_date,commit_author,commit_file
+repository_name,repository_url,commit_id,parent_commit_id,commit_url,commit_message,commit_date,commit_author,commit_file,""
 dbeaver/dbeaver,https://github.com/dbeaver/dbeaver,e4b5d5bfe46a2757f94244095dbe680186d78d73,8fb90a69c8279bfa3d5cfe630bfb81658a188616,https://github.com/dbeaver/dbeaver/commit/e4b5d5bfe46a2757f94244095dbe680186d78d73,"#20155 Refactor LSM to rely on SQLDialect (#20196)
 
 * #20155 Refactor lsm, add analyzer to sql dialect

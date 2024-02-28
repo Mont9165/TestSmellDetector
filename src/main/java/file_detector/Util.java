@@ -18,7 +18,7 @@ public class Util {
         stringBuilder.append(";");
         stringBuilder.append(status.toString());
 
-        System.out.println(stringBuilder.toString());
+//        System.out.println(stringBuilder.toString());
 
         FileWriter fileWriter = new FileWriter("Log.txt",true);
         fileWriter.write(stringBuilder.toString());
@@ -36,7 +36,7 @@ public class Util {
         stringBuilder.append(message);
 
 
-        System.out.println(stringBuilder.toString());
+//        System.out.println(stringBuilder.toString());
 
         FileWriter fileWriter = new FileWriter("Error.txt",true);
         fileWriter.write(stringBuilder.toString());

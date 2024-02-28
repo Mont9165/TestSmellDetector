@@ -81,7 +81,7 @@ public class TestSmellDetector {
         if (!StringUtils.isEmpty(testFile.getTestFilePath())) {
             testFileInputStream = new FileInputStream(testFile.getTestFilePath());
             testFileCompilationUnit = JavaParser.parse(testFileInputStream);
-            TypeDeclaration typeDeclaration = testFileCompilationUnit.getTypes().get(0);
+            TypeDeclaration<?> typeDeclaration = testFileCompilationUnit.getTypes().get(0);
             testFile.setNumberOfTestMethods(typeDeclaration.getMethods().size());
         }
 

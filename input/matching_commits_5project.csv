@@ -1,0 +1,336 @@
+repository_name,repository_url,commit_id,parent_commit_id,commit_url,commit_message,commit_date,commit_author,commit_file
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,97b4a19064bbfd72f650ef74e6291e1978f41350,a2e53fade9d2380cc6218cd98c2a0529ba81b72e,https://github.com/apache/logging-log4j2/commit/97b4a19064bbfd72f650ef74e6291e1978f41350,"Refactor `MarkerManager` and other resource locks
+
+Only one test needs write permission to `MarkerManager`",2022-06-20 19:31:02,Piotr P. Karwasz,"['log4j-api-test/src/test/java/org/apache/logging/log4j/AbstractLoggerTest.java', 'log4j-api-test/src/test/java/org/apache/logging/log4j/LoggerTest.java', 'log4j-api-test/src/test/java/org/apache/logging/log4j/MarkerTest.java', 'log4j-api-test/src/test/java/org/apache/logging/log4j/simple/SimpleLoggerTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,e362e7bb7c8b844d07b557a0953fa41282c66c62,ae2afdd2109f6193d2c0dc2bf4df2227b349e283,https://github.com/apache/logging-log4j2/commit/e362e7bb7c8b844d07b557a0953fa41282c66c62,Refactor magic strings into test constants.,2022-02-07 17:05:19,Gary Gregory,"['log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3AuthFailureTest.java', 'log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3CappedTest.java', 'log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3MapMessageTest.java', 'log4j-mongodb3/src/test/java/org/apache/logging/log4j/mongodb3/MongoDb3Test.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,c77ae68701c4de965eb56482d640435f6bce5d89,1abbebd985eec89b42af096ddee72b6ddb65ec7e,https://github.com/apache/logging-log4j2/commit/c77ae68701c4de965eb56482d640435f6bce5d89,Refactor magic strings into test constants.,2022-02-07 14:29:05,Gary Gregory,"['log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4AuthFailureTest.java', 'log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4CappedTest.java', 'log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4MapMessageTest.java', 'log4j-mongodb4/src/test/java/org/apache/logging/log4j/mongodb4/MongoDb4Test.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2320eef8118c9b397e0cba37216ce468220ddb5d,cdac17cd594e5235b8e26e28b4c80583fe9afc75,https://github.com/apache/logging-log4j2/commit/2320eef8118c9b397e0cba37216ce468220ddb5d,Refactor timeouts in SocketAppenderReconnectTest.,2021-12-23 10:19:54,Volkan Yazici,['log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketAppenderReconnectTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,d5b5df4dc9a314a2a48cd14223ac9007b4260273,9e7fe9e1a7165b7ffa0d766062e8ec02d34eeadb,https://github.com/apache/logging-log4j2/commit/d5b5df4dc9a314a2a48cd14223ac9007b4260273,Refactor existing test before playing with [LOG4J2-1839],2017-03-07 07:49:35,ggregory,"['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2DataSourceTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2FactoryMethodTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,50609f9c70679c03bc94229ea4fdd3d11337bb92,3c7a91fd119348ccba3c78313302c609122ed53f,https://github.com/apache/logging-log4j2/commit/50609f9c70679c03bc94229ea4fdd3d11337bb92,[LOG4J2-1774]: Refactor JmsAppenderTest to use JndiRule and Mockito,2017-01-07 23:26:48,Matt Sicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/mom/JmsAppenderTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,3c7a91fd119348ccba3c78313302c609122ed53f,b1cabb925981a3621c02ff7ce6bd658fd95d8672,https://github.com/apache/logging-log4j2/commit/3c7a91fd119348ccba3c78313302c609122ed53f,[LOG4J2-1774]: Refactor RoutingAppenderWithJndiTest to use JndiRule,2017-01-07 22:38:51,Matt Sicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/routing/RoutingAppenderWithJndiTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,b1cabb925981a3621c02ff7ce6bd658fd95d8672,ac89d8a360197eda2e9a0a73c0e09ba3d49d93ab,https://github.com/apache/logging-log4j2/commit/b1cabb925981a3621c02ff7ce6bd658fd95d8672,[LOG4J2-1774]: Refactor InterpolatorTest to use JndiRule,2017-01-07 22:34:39,Matt Sicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/lookup/InterpolatorTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,ac89d8a360197eda2e9a0a73c0e09ba3d49d93ab,98f20e9f67c2f33d6059abd34daaebe5f0f0c4a1,https://github.com/apache/logging-log4j2/commit/ac89d8a360197eda2e9a0a73c0e09ba3d49d93ab,Refactor JndiLookupTest to use JndiRule,2017-01-07 22:22:13,Matt Sicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/lookup/JndiLookupTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,cbf9ef03b86aa9aa0ecb7244710267cea613d473,7e5297d5220bc832df87dc3883446801be83c7d0,https://github.com/apache/logging-log4j2/commit/cbf9ef03b86aa9aa0ecb7244710267cea613d473,Refactor DataSourceConnectionSourceTest to use JndiRule,2017-01-07 22:14:16,Matt Sicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/DataSourceConnectionSourceTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,29a6821d0be759d977b4ee90db4c120f03bb6109,489d70846f3a724790dd7759cf8d73ee2d568042,https://github.com/apache/logging-log4j2/commit/29a6821d0be759d977b4ee90db4c120f03bb6109,"Refactor JdbcAppender tests into JUnit rules
+
+This adds two new JUnit rules: JdbcRule (for setup and teardown of a JDBC table) and JndiRule (for setup and teardown of a MockContext and binding of a value inside it).",2017-01-07 19:46:42,Matt Sicker,"['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderDataSourceTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderFactoryMethodTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2DataSourceTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderH2FactoryMethodTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderHsqlDataSourceTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcAppenderHsqlFactoryMethodTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,e7e58a32492444b349b3f65f964239e5b8093920,c81bed05a4813a028dd1a1fb07264dd618db3652,https://github.com/apache/logging-log4j2/commit/e7e58a32492444b349b3f65f964239e5b8093920,"Better tests for [LOG4J2-1474]. Refactor constants.
+
+CronTriggeringPolicy raise exception and fail to rollover log file when
+evaluateOnStartup is true.",2016-12-15 23:06:49,ggregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/rolling/CronTriggeringPolicyTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,bdd0e36237a8a30d46b814961140a08181a34ad1,86a037ffc4487cf025669c44137e3790bbf90e97,https://github.com/apache/logging-log4j2/commit/bdd0e36237a8a30d46b814961140a08181a34ad1,"Try to fix test on Jenkins by waiting a little longer for messages to
+come. Refactor this waiting in a new ListAppender method.",2016-09-08 20:29:45,Gary Gregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/AsyncAppenderTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,dd5a253234cebade3925c34f0b8ef5e565b2f2dd,0af1bc26d6523aadd21406d7b7d38aec75316a9f,https://github.com/apache/logging-log4j2/commit/dd5a253234cebade3925c34f0b8ef5e565b2f2dd,Refactor context selectors to test.,2016-08-05 19:21:54,ggregory,"['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/JsonCompleteFileAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompleteFileAppenderTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,67ca08b2a69408f1d57d7cb8f074f4a1937fc508,c7be2fe0110da46108b518edda51b5fa358cecb2,https://github.com/apache/logging-log4j2/commit/67ca08b2a69408f1d57d7cb8f074f4a1937fc508,Refactor to add XML test.,2016-04-06 22:00:18,ggregory,"['log4j-core/src/test/java/org/apache/logging/log4j/core/jackson/LevelMixInJsonTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/jackson/LevelMixInTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/jackson/LevelMixInXmlTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,c7be2fe0110da46108b518edda51b5fa358cecb2,57b72ed30ebea345d884aebeb3e62ca054e817a1,https://github.com/apache/logging-log4j2/commit/c7be2fe0110da46108b518edda51b5fa358cecb2,Refactor to add XML test.,2016-04-06 21:28:03,ggregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/impl/ThrowableProxyTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,57b72ed30ebea345d884aebeb3e62ca054e817a1,a2d3215ab02d058e226e13b6d75336595d164447,https://github.com/apache/logging-log4j2/commit/57b72ed30ebea345d884aebeb3e62ca054e817a1,Refactor to add XML test.,2016-04-06 21:23:11,ggregory,['log4j-core/src/test/java/org/apache/logging/log4j/MarkerMixInTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,a2d3215ab02d058e226e13b6d75336595d164447,96a9e998a1bc717bd021034048a1fac30475a489,https://github.com/apache/logging-log4j2/commit/a2d3215ab02d058e226e13b6d75336595d164447,Refactor to add XML test.,2016-04-06 21:21:45,ggregory,"['log4j-core/src/test/java/org/apache/logging/log4j/MarkerMixInJsonTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/MarkerMixInTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/MarkerMixInXmlTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,542b8beb4a5718c3495a45a60529175d7e05c12b,f7d63106b9ded11480e3c243e0b616b4bda3a762,https://github.com/apache/logging-log4j2/commit/542b8beb4a5718c3495a45a60529175d7e05c12b,"Refactor to a new file a very handy filter for users (like me) writing
+application tests:
+org.apache.logging.log4j.core.net.server.AbstractSocketServerTest.ThreadFilter
+-> org.apache.logging.log4j.core.net.server.ThreadFilter.",2015-11-02 10:55:36,ggregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/net/server/AbstractSocketServerTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,6d2baec217094689f36b53188351aa1b26754dac,c1e25297756adf228582389ef5ebca78d9135f2e,https://github.com/apache/logging-log4j2/commit/6d2baec217094689f36b53188351aa1b26754dac,Async Loggers performance test refactoring,2015-10-25 13:51:53,rpopma,['log4j-core/src/test/java/org/apache/logging/log4j/core/async/perftest/MultiThreadPerfTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,c697938585936779a47928f150401cb74967227e,bf3ba25dfe9e4d8a831bea783bed3a6e65b4593b,https://github.com/apache/logging-log4j2/commit/c697938585936779a47928f150401cb74967227e,"LOG4J2-323, 493, 1159 update test for refactoring",2015-10-20 17:08:43,rpopma,['log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerThreadNameStrategyTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2e092d30127691ded802c9a9aa11c447aa159e0e,0db8c1a2558e6f49afeb88685955564d862da08f,https://github.com/apache/logging-log4j2/commit/2e092d30127691ded802c9a9aa11c447aa159e0e,Refactor duplictate test assert into a method.,2015-08-20 01:09:11,ggregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,c6e7a59b89e1d9ae8a802235e0f14b76032c4db1,e6af9263772cbd305a868c5989515a4654ae53b7,https://github.com/apache/logging-log4j2/commit/c6e7a59b89e1d9ae8a802235e0f14b76032c4db1,"Refactor console appender test to test both sys out and sys err but only
+keeping testing sys out as new sys err tests fail.",2015-04-20 14:50:14,Gary Gregory,['log4j-core/src/test/java/org/apache/logging/log4j/core/appender/ConsoleAppenderTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2f612f40c9a577cd1ac9f4712f7b15e04d8dcf43,cbeab8131b5d4a9cf215ca5b2c44a201db97aba4,https://github.com/apache/logging-log4j2/commit/2f612f40c9a577cd1ac9f4712f7b15e04d8dcf43,"Refactor tests stopping the LogManager's Core LoggerContext into a
+utility class.",2015-03-25 23:52:33,Gary Gregory,"['log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/RollingRandomAccessFileAppenderRolloverTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompactFileAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompactFileAsyncAppenderValidationTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlCompleteFileAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlFileAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/appender/XmlRandomAccessFileAppenderTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigAutoFlushTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerConfigUseAfterShutdownTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerContextTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerLocationTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerThreadContextTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerTimestampMessageTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/async/AsyncLoggerUseAfterShutdownTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,408d0a9ab9e98f8856edccc0a1670b70abaafbdc,260a4a0180d684c704263bf9750f82264ecf4d5c,https://github.com/apache/logging-log4j2/commit/408d0a9ab9e98f8856edccc0a1670b70abaafbdc,Refactor SerializationTestUtils into Hamcrest matchers.,2014-10-04 16:26:46,Matt Sicker,['log4j-api/src/test/java/org/apache/logging/log4j/AbstractSerializationTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,a121ae06c97e18fd945eb615af87fcb676a52523,837e0aa18f73f1956f7cb2f901a2fbe960501c61,https://github.com/apache/logging-log4j2/commit/a121ae06c97e18fd945eb615af87fcb676a52523,"[LOG4J2-428] Implement a GELF layout. Refactor compression type enum to
+make it create the deflator stream, which avoid a switch in the layout,
+a bit more OO. Also test ZLIB compression and no compression.",2014-09-15 13:35:28,Gary Gregory,"['log4j-core/src/test/java/org/apache/logging/log4j/core/config/plugins/convert/TypeConvertersTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/layout/GelfLayoutTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2d1c0f87b11c06adedeed2039279e2574045e060,0a7e3a42a25c6c60ff8c903963a004c1a49911b5,https://github.com/apache/logging-log4j2/commit/2d1c0f87b11c06adedeed2039279e2574045e060,Refactor tests and update a few.,2014-09-10 06:41:43,Matt Sicker,"['log4j-jul/src/test/java/org/apache/logging/log4j/jul/AbstractLoggerTest.java', 'log4j-jul/src/test/java/org/apache/logging/log4j/jul/ApiLoggerTest.java', 'log4j-jul/src/test/java/org/apache/logging/log4j/jul/CoreLoggerTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,3faed6d42a6b87e068b431df5fcdf4066cc59a1d,7f3bcce08cbc87a319f653562543d69ccd5df2be,https://github.com/apache/logging-log4j2/commit/3faed6d42a6b87e068b431df5fcdf4066cc59a1d,"Refactor LoggerStream constructors into builder class.
+
+  - Now all the relevant classes can be constructed from a single unified builder class: LoggerStreams.
+  - Removed a lot of constructors.
+  - All constructors are now protected to allow for extension.
+  - Updated tests to use builder.
+  - Some documentation updated.",2014-09-04 16:56:30,Matt Sicker,"['log4j-iostreams/src/test/java/org/apache/logging/log4j/io/AbstractLoggerOutputStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/AbstractLoggerWriterTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedInputStreamCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedInputStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedReaderCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerBufferedReaderTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerFilterOutputStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerFilterWriterTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerInputStreamCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerInputStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerOutputStreamCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerOutputStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintStreamCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintStreamTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintWriterCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerPrintWriterTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerReaderCallerInfoTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerReaderTest.java', 'log4j-iostreams/src/test/java/org/apache/logging/log4j/io/LoggerWriterTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,bb5d55b7da937bff91117e39dd62d46004536d76,f892f849e72d59e74f0999d86b8b0fdf54efc218,https://github.com/apache/logging-log4j2/commit/bb5d55b7da937bff91117e39dd62d46004536d76,Test newly refactored LoggerOutputStream and LoggerFilterOutputStream.,2014-09-03 03:23:09,Gary Gregory,"['log4j-streams/src/test/java/org/apache/logging/log4j/streams/AbstractLoggerOutputStreamTest.java', 'log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerFilterOutputStreamTest.java', 'log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerOutputStreamTest.java', 'log4j-streams/src/test/java/org/apache/logging/log4j/streams/LoggerPrintStreamTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,1002626a1cff6a7066ac4142aced47aed459d13b,1988319b33d7ed1b3ecf6a90085d7fe506097e60,https://github.com/apache/logging-log4j2/commit/1002626a1cff6a7066ac4142aced47aed459d13b,"Refactor CouchDbObject into DefaultNoSqlObject.
+
+  - Back when I was looking into the APIs for some other NoSQL drivers, I noticed that almost all of them use Map<String, Object> as their document type. Only MongoDB uses a more specific class. Therefore, I've renamed the CouchDbObject class due to its versatility in supporting more NoSQL drivers in the future.
+  - Updated tests that referenced the old class.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1606953 13f79535-47bb-0310-9956-ffa450edef68",2014-07-01 00:27:25,mattsicker,['log4j-nosql/src/test/java/org/apache/logging/log4j/nosql/appender/NoSqlDatabaseManagerTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,633de9b5430f3337fecc075e3c1fb5e871c2add4,3f7805d0b0f192d9321e150135e20c36d2c3a5d7,https://github.com/apache/logging-log4j2/commit/633de9b5430f3337fecc075e3c1fb5e871c2add4,"Re-used AvailablePortFinder from the Core tests and remove the recently refactored FreePortFinder.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1605658 13f79535-47bb-0310-9956-ffa450edef68",2014-06-26 03:22:33,Gary D. Gregory,"['log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeAppenderTest.java', 'log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeEmbeddedAgentTest.java', 'log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumeEmbeddedAppenderTest.java', 'log4j-flume-ng/src/test/java/org/apache/logging/log4j/flume/appender/FlumePersistentAppenderTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2ba1eac3dd67bb76c3a2d174d435cc4de5e18718,d4a268e95beab64baa1219b493a8ca178ec0d56a,https://github.com/apache/logging-log4j2/commit/2ba1eac3dd67bb76c3a2d174d435cc4de5e18718,"Refactor test to use ILC.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596486 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 06:17:18,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/filter/BurstFilterTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,5b5abc330c8aa3dc982d4e7948d17b7e819288cb,db8b828f7756db30ed1b79cce1d6cd961fd0a24b,https://github.com/apache/logging-log4j2/commit/5b5abc330c8aa3dc982d4e7948d17b7e819288cb,"Refactor tests to use ILC.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596481 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 06:01:08,mattsicker,"['log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketMessageLossTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketReconnectTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/net/SocketTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,ce8713ceea39a899ef0629da4ddd4f7a6e9c6002,6896181d9101a5b1104f5f509e45b8dcbe4a74aa,https://github.com/apache/logging-log4j2/commit/ce8713ceea39a899ef0629da4ddd4f7a6e9c6002,"Refactor tests to use InitialLoggerContext and other assertion clean-ups.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596458 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 04:58:01,mattsicker,"['log4j-core/src/test/java/org/apache/logging/log4j/core/LogEventFactoryTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerDateTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/LoggerUpdateTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/ShutdownDisabledTest.java', 'log4j-core/src/test/java/org/apache/logging/log4j/core/StrictXMLConfigTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,6896181d9101a5b1104f5f509e45b8dcbe4a74aa,1656f5522acff1480018c402ec86e5cad0bc09a6,https://github.com/apache/logging-log4j2/commit/6896181d9101a5b1104f5f509e45b8dcbe4a74aa,"Refactor test to use InitialLoggerContext and stuff.
+
+  - Use AtomicInteger to maintain proper counter.
+  - Added to performance tests category.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596457 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 04:56:44,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/ThreadedTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,1656f5522acff1480018c402ec86e5cad0bc09a6,b63b8576a71a0b871a939f36d8fd05a5db490b13,https://github.com/apache/logging-log4j2/commit/1656f5522acff1480018c402ec86e5cad0bc09a6,"Refactor test to use InitialLoggerContext.
+
+  - Also fixed warning about raw types.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596456 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 04:54:18,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/LookupTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,e3e517e5b61056fbdc3e3ea63a6a307aff59fcbc,48c61f9d4a0c2ae2eb8d01bc90374731eb78ce1b,https://github.com/apache/logging-log4j2/commit/e3e517e5b61056fbdc3e3ea63a6a307aff59fcbc,"Refactor test to use InitialLoggerContext.
+
+  - Removed * static import on Level.
+  - Made Expected a static inner class.
+  - Assertion statement clarifications.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596453 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 03:49:59,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/LevelTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,465e912e14db519693fd2d337ae44fdad1043a2d,5f69d03a0052fc2f600a1ba9e7baaf3fe524e1c3,https://github.com/apache/logging-log4j2/commit/465e912e14db519693fd2d337ae44fdad1043a2d,"Refactor test to use InitialLoggerContext rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596445 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 02:49:22,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/HostNameTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,5f69d03a0052fc2f600a1ba9e7baaf3fe524e1c3,5f3604dccf0f275086378462f8cf91849e94be71,https://github.com/apache/logging-log4j2/commit/5f69d03a0052fc2f600a1ba9e7baaf3fe524e1c3,"Refactor test to use InitialLoggerContext rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1596443 13f79535-47bb-0310-9956-ffa450edef68",2014-05-21 02:44:36,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/FileConfigTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,ba48ae7af9349515cd3cbf9a6eefa039b4fc82b7,2fd3880c1d5748feaab5a758bdc32a44f44162b6,https://github.com/apache/logging-log4j2/commit/ba48ae7af9349515cd3cbf9a6eefa039b4fc82b7,"Refactor test to use InitialLoggerContext rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1595726 13f79535-47bb-0310-9956-ffa450edef68",2014-05-19 02:17:19,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/ExtendedLevelTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,2fd3880c1d5748feaab5a758bdc32a44f44162b6,9ac560997ae6d4f107b6299c620ae3ceaa309599,https://github.com/apache/logging-log4j2/commit/2fd3880c1d5748feaab5a758bdc32a44f44162b6,"Refactor test to use InitialLoggerContext rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1595725 13f79535-47bb-0310-9956-ffa450edef68",2014-05-19 02:13:35,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/CollectionLoggingTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,b4a2b3f9c6bbde673816e9ebe6712dcb79f1ae09,e60415c41d68082c1308267e13fec921e3b1ca46,https://github.com/apache/logging-log4j2/commit/b4a2b3f9c6bbde673816e9ebe6712dcb79f1ae09,"Refactor test to use InitialLoggerContext rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1595720 13f79535-47bb-0310-9956-ffa450edef68",2014-05-19 01:59:31,mattsicker,['log4j-core/src/test/java/org/apache/logging/log4j/core/AppenderRefLevelJsonTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,997e102e468125f8d136042ebecc6dcf769e872f,ba3c7fc3e5bfab09259e603fcc7e5d239b734b9e,https://github.com/apache/logging-log4j2/commit/997e102e468125f8d136042ebecc6dcf769e872f,"Refactor magic string into a constant. Oops created sanity test in the wrong module.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1594355 13f79535-47bb-0310-9956-ffa450edef68",2014-05-13 19:58:28,Gary D. Gregory,['log4j-api/src/test/java/org/apache/log4j/util/StringsTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,776cf7e3ec02faab09493cadd072b6df0876fd13,49954b01e3fda1e5e9eec7c64f75de0a633e82df,https://github.com/apache/logging-log4j2/commit/776cf7e3ec02faab09493cadd072b6df0876fd13,"Test order should not matter. When this test class is invoked from Eclipse for example, while running all tests in the project, it will fail. Use recently refactored static block into the new ThreadContext.init().
+
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1593321 13f79535-47bb-0310-9956-ffa450edef68",2014-05-08 16:26:25,Gary D. Gregory,['log4j-api/src/test/java/org/apache/logging/log4j/ThreadContextInheritanceTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,bd765e2e150eac86a0cb60c3e6e357fec3792acc,f8e637899cdcac200c7d76ac29560681e3956c3f,https://github.com/apache/logging-log4j2/commit/bd765e2e150eac86a0cb60c3e6e357fec3792acc,"Test order should not matter. When this test class is invoked from Eclipse for example, while running all tests in the project, it will fail. This change extracts the static block code into a method to be invoked from the test set up and tear down methods. Also make sure we do disable everything in the test. The refactoring also renames the svar all (all what?) to disableAll. I'm not sure why we even need this ivar...
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1593318 13f79535-47bb-0310-9956-ffa450edef68",2014-05-08 16:19:29,Gary D. Gregory,['log4j-api/src/test/java/org/apache/logging/log4j/NoopThreadContextTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,05f21996d0c598910e2ddb614453b6b4fb41d0c8,8bed481825455a1af1588d3fff7fde66d4445c5f,https://github.com/apache/logging-log4j2/commit/05f21996d0c598910e2ddb614453b6b4fb41d0c8,"Refactor OSGi tests using new test rule.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1587790 13f79535-47bb-0310-9956-ffa450edef68",2014-04-16 03:22:37,mattsicker,"['log4j-api/src/test/java/org/apache/logging/log4j/osgi/AbstractLoadBundleTest.java', 'log4j-api/src/test/java/org/apache/logging/log4j/osgi/equinox/AbstractEquinoxLoadBundleTest.java', 'log4j-api/src/test/java/org/apache/logging/log4j/osgi/felix/AbstractFelixLoadBundleTest.java']"
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,e339c0c7b48653d644a10d8aa9d7dfe65b5defb1,eacbbd23ce0097bcbb883e55c13a47a9e3d5a509,https://github.com/apache/logging-log4j2/commit/e339c0c7b48653d644a10d8aa9d7dfe65b5defb1,"[LOG4J2-341] Enable XInclude for XML configurations. Start work on getting XML configs using XInclude to be validated. Refactor the creation of the document builder in a method; refactor enablement of XInclude in a method. Tests must process the XML document to allow XInclude to kick in before validation is performed.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1514013 13f79535-47bb-0310-9956-ffa450edef68",2013-08-14 19:28:17,Gary D. Gregory,['core/src/test/java/org/apache/logging/log4j/core/config/XMLConfigurationTest.java']
+apache/logging-log4j2,https://github.com/apache/logging-log4j2,3d5e5587fc99671063e8d63e7c34b5ed915fe370,6743d2cd2249caecfc348c7482bbb7a8030143a2,https://github.com/apache/logging-log4j2/commit/3d5e5587fc99671063e8d63e7c34b5ed915fe370,"Refactor the JDBC test class to test another database: H2. I think this raises the level of confidence in the JDBC appender code and tests.
+
+git-svn-id: https://svn.apache.org/repos/asf/logging/log4j/log4j2/trunk@1482660 13f79535-47bb-0310-9956-ffa450edef68",2013-05-15 02:23:46,Gary D. Gregory,"['core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/AbstractJdbcAppenderTest.java', 'core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcH2AppenderTest.java', 'core/src/test/java/org/apache/logging/log4j/core/appender/db/jdbc/JdbcHyperSqlAppenderTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,50ca244b38e130923b5426092895c587e207f4a2,d26470b139550295bfbac4c6762e9c2d8d1bc435,https://github.com/apache/commons-math/commit/50ca244b38e130923b5426092895c587e207f4a2,"MATH-1622: Hybridation of simplex-based search with simulated annealing (SA).
+
+Class ""SimulatedAnnealing"" provides user-defined input (""OptimizationData"").
+Behaviour of ""SimplexOptimizer"" depends on whether SA is activated (if yes,
+each ""iteration"" is further split in ""epoch"" stages).
+The ""Simplex.TransformFactory"" interface is changed to allow passing the SA
+acceptance test (""Metropolis"" rule).
+
+The ""SimplexOptimizer"" is furter refactored (cf. MATH-1614) so that the
+steps (in method ""doOptimize"") clearly stand out as
+ 1. Setup and iteration (optionally with simulated annealing).
+ 2. Simplex transformation rule.
+ 3. Convergence check.
+ 4. ""Best list"" search.
+
+This commit also contains the following modifications:
+ * ""TestFunction"": Override ""toString"" (for display in unit tests).
+ * ""Simplex""
+   - Self-documenting names for factories.
+   - Utility methods: ""centroid"", ""asList"", ""replaceLast"".
+   - Unit tests.
+ * ""MultiDirectionalTransform"":
+   - Use common utility methods.
+   - Fix missing sort in ""transform"" method.
+   - Check validity of constructor parameters.
+   - Parameter names to match the equivalent in ""NelderMeadMeadTransform"".
+ * Adapt unit test classes to the updated API of class ""Simplex"".
+ * ""PointValuePair"":
+   - ""final"".
+   - Implements ""hashCode"".",2021-08-01 22:19:03,Gilles Sadowski,"['commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapterTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerHedarFukushimaTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerMultiDirectionalTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerNelderMeadTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,46a0c3ae4140fd34cf8479362192bddb7b7b3e38,7f425354fb4eed78832bbcb37b81acfd21879ab0,https://github.com/apache/commons-math/commit/46a0c3ae4140fd34cf8479362192bddb7b7b3e38,"MATH-1614: Refactoring of ""SimplexOptimizer"".
+
+Class ""Simplex"" supersedes ""AbstractSimplex"" whose subclasses are replaced
+by implementations of the ""Simplex.TransformFactory"" interface.
+The new classes are immutable.
+
+Test suite has been updated.
+It tries to assess correctness through randomization; however some standard
+optimization problems entail systematic failures that were previously hidden
+through using fixed seeds.  [The corresponding unit tests are skipped, and
+further work is needed in order to find out whether those problems are too
+hard for the algorithm or the issue lies elsewhere.]",2021-07-11 00:10:11,Gilles Sadowski,"['commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultiStartMultivariateOptimizerTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionMappingAdapterTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/MultivariateFunctionPenaltyAdapterTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerMultiDirectionalTest.java', 'commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerNelderMeadTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,5e59617d85a2fb8eaab0bd84711b3e48b698abe6,9fca795acfb74a5954229743780a71a7c0b16c76,https://github.com/apache/commons-math/commit/5e59617d85a2fb8eaab0bd84711b3e48b698abe6,"MATH-1578: Modularization.
+
+Code moved from ""o.a.c.math4.legacy.ml.neuralnet"" into a dedicated module.
+
+Refactored ""TSP"" example application (formerly provided as a unit test).",2021-05-15 15:09:39,Gilles Sadowski,"['commons-math-legacy/src/test/java/org/apache/commons/math4/legacy/ml/neuralnet/sofm/KohonenTrainingTaskTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/MapRankingTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/NetworkTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/NeuronTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/oned/NeuronStringTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/KohonenUpdateActionTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/LearningFactorFunctionFactoryTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/NeighbourhoodSizeFunctionFactoryTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/util/ExponentialDecayFunctionTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/sofm/util/QuasiSigmoidDecayFunctionTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/twod/NeuronSquareMesh2DTest.java', 'commons-math-neuralnet/src/test/java/org/apache/commons/math4/neuralnet/twod/util/LocationFinderTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,cf2b9e7479179bff9111df99b7fa9f30a1bd5a8b,b8d96de5871d938f678b4702c2fcc306bdf1f34d,https://github.com/apache/commons-math/commit/cf2b9e7479179bff9111df99b7fa9f30a1bd5a8b,"MATH-1504: Removed ""BigFraction"" class (ported to ""Commons Numbers"").
+
+Functionality unused within ""Commons Math"" was also removed:
+ * Utility to build ""FieldMatrix<BigFraction>"" instances.
+ * Utility to convert from ""FieldMatrix<BigFraction>"" to ""RealMatrix"".
+
+Class ""BigFraction"" was used for testing ""Field"" functionalities.
+Corresponding unit tests were refactored to use class ""Dfp"" instead.",2019-12-03 13:51:53,Gilles Sadowski,"['src/test/java/org/apache/commons/math4/analysis/interpolation/FieldHermiteInterpolatorTest.java', 'src/test/java/org/apache/commons/math4/fraction/BigFractionFieldTest.java', 'src/test/java/org/apache/commons/math4/fraction/BigFractionTest.java', 'src/test/java/org/apache/commons/math4/linear/MatrixUtilsTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,b8d96de5871d938f678b4702c2fcc306bdf1f34d,238f211d6a7b94b65c56fd20a0bbb1e4f936f17a,https://github.com/apache/commons-math/commit/b8d96de5871d938f678b4702c2fcc306bdf1f34d,"MATH-1446: Removed ""Fraction"" class (ported to ""Commons Numbers"").
+
+Functionality unused within ""Commons Math"" was also removed:
+ * Utility to build ""FieldMatrix<Fraction>"" instances.
+ * Utility to convert from ""FieldMatrix<Fraction>"" to ""RealMatrix"".
+
+Class ""Fraction"" was used for testing ""Field"" functionalities.
+Corresponding unit tests were refactored to use class ""Dfp"" instead.
+A ""dummy"" class (""Dfp25"") was introduced for that purpose (in ""src/test"").
+Some tests, too tied to the field type being ""Fraction"", were modified.",2019-12-03 11:53:05,Gilles Sadowski,"['src/test/java/org/apache/commons/math4/fraction/FractionTest.java', 'src/test/java/org/apache/commons/math4/linear/ArrayFieldVectorTest.java', 'src/test/java/org/apache/commons/math4/linear/BlockFieldMatrixTest.java', 'src/test/java/org/apache/commons/math4/linear/FieldLUDecompositionTest.java', 'src/test/java/org/apache/commons/math4/linear/FieldLUSolverTest.java', 'src/test/java/org/apache/commons/math4/linear/FieldMatrixImplTest.java', 'src/test/java/org/apache/commons/math4/linear/MatrixUtilsTest.java', 'src/test/java/org/apache/commons/math4/linear/SparseFieldMatrixTest.java', 'src/test/java/org/apache/commons/math4/linear/SparseFieldVectorTest.java', 'src/test/java/org/apache/commons/math4/util/OpenIntToFieldTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,34adc606601cb578486d4a019b4655c5aff607b5,777af155a678286614d261887790352b43fa7c2a,https://github.com/apache/commons-math/commit/34adc606601cb578486d4a019b4655c5aff607b5,"MATH-1421: Code refactoring.
+
+Replaced unnecessary usage of ""pow"" function.
+Reordered some operations.
+
+It fixes the reported case where the lower bound was negative (see unit
+test), but it might not be sufficient to avoid the problem in all cases.",2017-06-22 01:03:15,Gilles,['src/test/java/org/apache/commons/math4/stat/interval/WilsonScoreIntervalTest.java']
+apache/commons-math,https://github.com/apache/commons-math,1a6879a0023a2892323221622e0d1e759613c68f,499101c88c8158844e7bbdcba35b8fe91bed8314,https://github.com/apache/commons-math/commit/1a6879a0023a2892323221622e0d1e759613c68f,"Make QR in GaussNewton faster and more accurate
+
+Re-factored the code in GaussNewtonOptimizer so that the decomposition
+algorithm sees the Jacobian and residuals instead of the normal
+equation. This lets the QR algorithm operate directly on the Jacobian
+matrix, which is faster and less sensitive to numerical errors. As a
+result, one test case that threw a singular matrix exception now passes
+with the QR decomposition.
+
+The refactoring also include a speed improvement when computing the
+normal matrix for the LU decomposition. Since the normal matrix is
+symmetric only half of is computed, which results in a factor of 2 speed
+up in computing the normal matrix for problems with many more
+measurements than states.
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1569905 13f79535-47bb-0310-9956-ffa450edef68",2014-02-19 20:31:47,Luc Maisonobe,['src/test/java/org/apache/commons/math3/fitting/leastsquares/GaussNewtonOptimizerWithQRTest.java']
+apache/commons-math,https://github.com/apache/commons-math,c1ba07bb65f41afed35c12c12b40b4e8d03a408a,54a7796ff234a9cbd2c66f8b1e5621f0898402f1,https://github.com/apache/commons-math/commit/c1ba07bb65f41afed35c12c12b40b4e8d03a408a,"MATH-1014
+""PolynomialCurveFitter"" as replacement of ""PolynomialFitter"". Some tests have
+been obsoleted by the refactoring (which hides the optimizer and thus avoids
+some potential misuses).
+
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1543906 13f79535-47bb-0310-9956-ffa450edef68",2013-11-20 18:57:53,Gilles Sadowski,['src/test/java/org/apache/commons/math3/fitting/PolynomialCurveFitterTest.java']
+apache/commons-math,https://github.com/apache/commons-math,c7196c8f20aaa8095fad98cd465105080ff6c6a7,d182f07d6aa3e2e9685a126da5953fe7f0d8206c,https://github.com/apache/commons-math/commit/c7196c8f20aaa8095fad98cd465105080ff6c6a7,"MATH-795:  refactored unit tests for double RealVector.cosine(RealVector).
+
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1358033 13f79535-47bb-0310-9956-ffa450edef68",2012-07-06 03:48:04,Sebastien Brisard,"['src/test/java/org/apache/commons/math3/linear/ArrayRealVectorTest.java', 'src/test/java/org/apache/commons/math3/linear/RealVectorAbstractTest.java', 'src/test/java/org/apache/commons/math3/linear/SparseRealVectorTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,8071ded100328216b09d3e5aecbfc4f9ccad22de,5e5cb5ec2fefdcd469cfdec9197746acdec46149,https://github.com/apache/commons-math/commit/8071ded100328216b09d3e5aecbfc4f9ccad22de,"MATH-795: in RealVectorAbstractTest, refactored unit tests of
+  - RealVector RealVector.combine(double, double, RealVector),
+  - RealVector RealVector.combineToSelf(double, double, RealVector).
+
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1356070 13f79535-47bb-0310-9956-ffa450edef68",2012-07-02 05:46:10,Sebastien Brisard,['src/test/java/org/apache/commons/math3/linear/RealVectorAbstractTest.java']
+apache/commons-math,https://github.com/apache/commons-math,b468defc676cddd3af2953f5e033f449d9cc661d,d2d9d32f794586fc5f1307f5afb9a0f399725869,https://github.com/apache/commons-math/commit/b468defc676cddd3af2953f5e033f449d9cc661d,"Refactored RandomGenerator tests.
+* Added RandomGeneratorAbstractTest collecting stock tests for RandomGenerator
+  implementations and running RandomDataTest test cases using RandomDataImpls
+  constructed from generators under test.
+* Added BitsStreamGeneratorTest extending RandomGeneratorAbstractTest to test
+  abstract method implementations in BitStreamGenerator.
+* Changed Mersenne and Well generator tests to extend RandomGeneratorAbstractTest.
+* Improved test coverage (discovering MATH-640) of AbstractRandomGeneratorTest
+  by making this class extend RandomGeneratorAbstractTest.
+All new tests use fixed seeds.
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1153257 13f79535-47bb-0310-9956-ffa450edef68",2011-08-02 19:48:18,Phil Steitz,"['src/test/java/org/apache/commons/math/random/AbstractRandomGeneratorTest.java', 'src/test/java/org/apache/commons/math/random/BitsStreamGeneratorTest.java', 'src/test/java/org/apache/commons/math/random/MersenneTwisterTest.java', 'src/test/java/org/apache/commons/math/random/RandomDataTest.java', 'src/test/java/org/apache/commons/math/random/RandomGeneratorAbstractTest.java', 'src/test/java/org/apache/commons/math/random/Well1024aTest.java', 'src/test/java/org/apache/commons/math/random/Well19937aTest.java', 'src/test/java/org/apache/commons/math/random/Well19937cTest.java', 'src/test/java/org/apache/commons/math/random/Well44497aTest.java', 'src/test/java/org/apache/commons/math/random/Well44497bTest.java', 'src/test/java/org/apache/commons/math/random/Well512aTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,b9559bfce972a8b079ebc5ac8b6326a524ce29f8,c32b8042d81bcc66151e3b2c03695a9a7bfd33c2,https://github.com/apache/commons-math/commit/b9559bfce972a8b079ebc5ac8b6326a524ce29f8,"MATH-439
+Refactored the ""solvers"" package. Implementations refer to number of
+evaluation of the objective function (instead of the number of iterations).
+New interfaces and base classes.
+""NewtonSolver"" fits in the design without resorting to a cast.
+Created class ""MullerSolver2"" to contain the code of the method named ""solve2""
+in class ""MullerSolver"".
+Removed ""UnivariateRealSolverFactory"" and ""UnivariateRealSolverFactoryImpl"".
+Default solver in ""UnivariateRealSolverUtils"" is explicitely instantiated.
+""AbstractContinuousDistribution"": Type of exception thrown changed in
+""UnivariateRealSolverUtils"".
+Factored out duplicate code (in ""GaussNewtonOptimizerTest"" and
+""LevenbergMarquardtOptimizerTest""): class ""Circle"" is now called
+""CircleVectorial"". Also factored out the ""Circle"" class from
+""NonLinearConjugateGradientOptimizerTest"": class is named ""CircleScalar"".
+Created ""SecantSolverTest"", moving there all the tests for the class
+""SecantSolver"" that were located in class ""BrentSolverTest"".
+Created new interface and base class for polynomial functions solvers
+(""LaguerreSolver"") so that the function type is now checked at compile time.
+Removed deprecated exceptions (MATH-441).
+Javadoc clean-up.
+Lowered tolerance values in some unit tests.
+Tests upgraded to Junit 4 (MATH-423).
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@1039083 13f79535-47bb-0310-9956-ffa450edef68",2010-11-25 16:22:00,Gilles Sadowski,"['src/test/java/org/apache/commons/math/analysis/solvers/BisectionSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/BrentSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/LaguerreSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/MullerSolver2Test.java', 'src/test/java/org/apache/commons/math/analysis/solvers/MullerSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/NewtonSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/RiddersSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/SecantSolverTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverFactoryImplTest.java', 'src/test/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtilsTest.java', 'src/test/java/org/apache/commons/math/ode/nonstiff/DormandPrince853IntegratorTest.java', 'src/test/java/org/apache/commons/math/ode/nonstiff/HighamHall54IntegratorTest.java', 'src/test/java/org/apache/commons/math/optimization/general/GaussNewtonOptimizerTest.java', 'src/test/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizerTest.java', 'src/test/java/org/apache/commons/math/optimization/general/NonLinearConjugateGradientOptimizerTest.java']"
+apache/commons-math,https://github.com/apache/commons-math,e60e3de47441ca63198c7404b5910d7cffe1c248,e7c3207b052f44a36c94a6b684f44ab79df59b86,https://github.com/apache/commons-math/commit/e60e3de47441ca63198c7404b5910d7cffe1c248,"Added a new minimization package with an implementation of the Brent algorithm
+contributed by Gilles Sadowski.
+The implementation needs some testing as it seems to never use the parabola fitting
+and only relying on golden section. This may be due to the refactoring I did on
+the original patch.
+Jira: MATH-177
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/math/trunk@735475 13f79535-47bb-0310-9956-ffa450edef68",2009-01-18 15:39:35,Luc Maisonobe,['src/test/org/apache/commons/math/analysis/minimization/BrentMinimizerTest.java']
+apache/commons-math,https://github.com/apache/commons-math,7651a6b14d5be6151432e7d709efd884d9ec3a6c,065a88e24188fd324e7f6e5f70aefaf95c9a49b9,https://github.com/apache/commons-math/commit/7651a6b14d5be6151432e7d709efd884d9ec3a6c,"* ContractableDoubleArray extends ExpandableDoubleArray - I sense the
+need for a DoubleArray interface.
+
+* ExpandableDoubleArray and the extension ContractableDoubleArray should
+aim towards presenting a public interface that does not expose any
+details of the internal.  To this end, one is no longer able to get the
+internal storage array via public double[] getValues(), and the startIndex
+(which was relative to the internal storage array) is no longer available.
+
+* [Expandable|Contractable]DoubleArray now allow one to discard
+elements from the front of the array.  Before this commit, one could
+accomplish the same goal by changing the starting index of the element
+array within the internal storage array.  This solution allowed one to
+discard elements from the front of the array (as well as) reclaiming
+elements by decreases the startIndex.
+
+There were two problems with this approach (especially in
+ContractableDoubleArray).   The ContractableDoubleArray can be
+""compacted"" at anytime thereby reseting the startIndex to zero and the
+size of the internal store array to number of elements plus one.  Second,
+""reclaiming"" elements from the internal storage array by finagling
+internal ""pointers"" to the start and end index seems to violate the
+principles of encapsulation.  If you ""discard"" an element from the
+front of the array, consider it unavailable.
+
+It should be noted that calling setNumElements allows one to move the end
+index of the internal element array at will.  Assume one has a 100 element
+array, and one calls setNumElements(10), thereby decreasing the ending index
+of the element array by 90.  The 90 ""dumped"" elements are not currently
+reinitializied to the default double primitive value.  This is an open
+question.
+
+* Tests for ExpandableDoubleArray and ContractableDoubleArray were
+refactored.  both test classes now extend a DoubleArrayAbstractTest
+JUnit class which contained shared unit tests for both ""implementations"".
+An approach like this should be adopted to test the Univariate implementations.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/jakarta/commons/proper/math/trunk@140833 13f79535-47bb-0310-9956-ffa450edef68",2003-05-16 03:55:34,Tim O'Brien,"['src/test/org/apache/commons/math/ContractableDoubleArrayTest.java', 'src/test/org/apache/commons/math/DoubleArrayAbstractTest.java', 'src/test/org/apache/commons/math/ExpandableDoubleArrayTest.java', 'src/test/org/apache/commons/math/TestStatisticTest.java']"
+apache/commons-io,https://github.com/apache/commons-io,3facb4e0f3720c9b534a244b76ca21ff2d480b19,ab687c99046850c08a7bf4dd5f14eb6e3aa43051,https://github.com/apache/commons-io/commit/3facb4e0f3720c9b534a244b76ca21ff2d480b19,"Use final, end file with empty line, refactor commons code in test",2022-08-08 05:10:44,Gary Gregory,['src/test/java/org/apache/commons/io/function/IOSupplierTest.java']
+apache/commons-io,https://github.com/apache/commons-io,28103ed74bedf5ba971b54e25d599a2ff6b2b94f,09649d5724367bc7c954e7d0b5f6f4ee74942a8e,https://github.com/apache/commons-io/commit/28103ed74bedf5ba971b54e25d599a2ff6b2b94f,Refactor tests to break out WildcardFileFilterTest.,2021-09-21 13:19:05,Gary Gregory,"['src/test/java/org/apache/commons/io/filefilter/AbstractFilterTest.java', 'src/test/java/org/apache/commons/io/filefilter/WildcardFileFilterTest.java']"
+apache/commons-io,https://github.com/apache/commons-io,47e16e5bcff38e7cde014b3c78f3f0b4be69739f,3f8cc6d5f6565608b0146f87137ed34316bc4eb3,https://github.com/apache/commons-io/commit/47e16e5bcff38e7cde014b3c78f3f0b4be69739f,"[IO-302] ArrayIndexOutOfBoundsException in BOMInputStream when reading a file without BOM multiple times. Refactor tests to use both BOM and no-BOM test files.
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/io/trunk@1292460 13f79535-47bb-0310-9956-ffa450edef68",2012-02-22 19:22:57,Gary D. Gregory,['src/test/java/org/apache/commons/io/input/BOMInputStreamTest.java']
+apache/commons-io,https://github.com/apache/commons-io,3777327db78077f50f7e7488298588c90c6589de,389eebcb50481ac5cb120688175eb946ae295629,https://github.com/apache/commons-io/commit/3777327db78077f50f7e7488298588c90c6589de,"Create a version of the XmlStreamReaderUtilitiesTest to run against the original XmlStreamReader implementation (Sanity check to make sure all the refactoring hasn't screwed things up)
+
+git-svn-id: https://svn.apache.org/repos/asf/commons/proper/io/trunk@1004857 13f79535-47bb-0310-9956-ffa450edef68",2010-10-06 00:00:41,Niall Pemberton,"['src/test/java/org/apache/commons/io/input/XmlStreamReaderUtilitiesTest.java', 'src/test/java/org/apache/commons/io/input/compatibility/XmlStreamReaderUtilitiesCompatibilityTest.java']"
+apache/commons-text,https://github.com/apache/commons-text,7ce34ddb3ef0ecd120a7133e710462cf618972ae,da87e5cc6bea68fd9694cc9f59a8b78cad4eb4b1,https://github.com/apache/commons-text/commit/7ce34ddb3ef0ecd120a7133e710462cf618972ae,Refactor test.,2020-07-11 14:57:08,Gary Gregory,['src/test/java/org/apache/commons/text/StringSubstitutorTest.java']
+zalando/logbook,https://github.com/zalando/logbook,d406857d6db69c29dfcea910aeb99302be08d404,3894f58954a658439ed4cd3a3f7bd28b0ae126db,https://github.com/zalando/logbook/commit/d406857d6db69c29dfcea910aeb99302be08d404,"feature(logbook-spring-boot-autoconfigure): add support for logbook-openfeign (#1559)
+
+* feature(logbook-spring-boot-autoconfigure): add support for logbook-openfeign
+
+* feature(logbook-spring-boot-autoconfigure): add test for logbook-openfeign config
+
+* refactor(logbook-spring-boot-autoconfigure): change feign-core library scope to optional
+
+---------
+
+Co-authored-by: zabka.pavol <zabka.pavol@scheidt-bachmann.sk>",2023-06-26 14:36:51,p-8-z,['logbook-spring-boot-autoconfigure/src/test/java/org/zalando/logbook/autoconfigure/FeignTest.java']
+zalando/logbook,https://github.com/zalando/logbook,5b5213f42fc6a96cb8c179de0bb294cc2e018a70,20c1689ef0898e16814ab04ef96b12e58323dac7,https://github.com/zalando/logbook/commit/5b5213f42fc6a96cb8c179de0bb294cc2e018a70,"Refactored ExcludeTest to correctly use new setup
+
+Fixes #754",2020-08-02 19:38:29,Willi Schönborn,['logbook-spring-boot-autoconfigure/src/test/java/org/zalando/logbook/autoconfigure/ExcludeTest.java']
+zalando/logbook,https://github.com/zalando/logbook,5116a43450ae501ebc288394702a802c52b92377,8b68e828ebb46eddd0f8ed8b64970a8c61b2c10e,https://github.com/zalando/logbook/commit/5116a43450ae501ebc288394702a802c52b92377,GH-151 Refactors test,2017-04-13 15:16:46,Alexander Yastrebov,['logbook-core/src/test/java/org/zalando/logbook/HeaderFiltersTest.java']
