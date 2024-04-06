@@ -30,8 +30,6 @@ public class Main {
     static List<String> processCommitList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException, GitAPIException {
-//        TODO　git clone. checkout, createDirectories change, results/smellから特定のメソッドのスメルを取り出す
-
         FileReader jsonReader = new FileReader("input/change_5project.json");
         FileReader csv = new FileReader("input/commits_list.csv");
         CSVReader csvReader = new CSVReaderBuilder(csv).build();
@@ -39,55 +37,59 @@ public class Main {
 
         JsonObject jsonObject = readJson(jsonReader);
 
-//        processRecords(records);
+        processRecords(records);
 
 
-        processJson(jsonObject, records);
+//        processJson(jsonObject, records);
     }
 
-//    private static void processRecords(List<String[]> records) throws GitAPIException, IOException {
-//        for (String[] record : records){
-//            if (record[0].equals("repository_name")) continue;
-//            processRecord(record);
-//        }
-//    }
-
-//    private static void processRecord(String[] record) throws GitAPIException, IOException {
-//        String repoDir = "repo/" + record[0];
-//        System.out.println(repoDir);
-//        File inputFile = new File(repoDir);
-//        Repository repository = openRepository(record[1]+".git", inputFile);
-//        Git git = new Git(repository);
-//
-//        processCommit(git, repoDir, record[2]);
-//    }
-//    private static void processCommit(Git git, String repoDir, String commitID) throws GitAPIException, IOException {
-//        checkoutRepository(git, commitID);
-//        collectMethodSmells(repoDir, commitID);
-//        processCommitList.add(commitID);
-//    }
-
-    private static void processCommit(String repoDir, List<String[]> records, Set<String> processCommitList, String commitID) throws Exception {
-        String[] result = readCommitRecord(repoDir, records, commitID); // 0:repo_name
-
-        List<String> commitList = new ArrayList<>();
-        commitList.add(commitID);   // commit ID
-        commitList.add(result[1]);  // parent commit ID
-
-        File inputFile = new File(repoDir);
-        Repository repository = openRepository(result[0], inputFile);
-        Git git = new Git(repository);
-
-
-        for (String commit : commitList) {
-            if (!processCommitList.contains(commit)) {
-                checkoutRepository(git, commit);
-                collectMethodSmells(repoDir, commit);
-                processCommitList.add(commit);
+    private static void processRecords(List<String[]> records) throws GitAPIException, IOException {
+        for (String[] record : records){
+            if (!record[0].equals("repository_name")){
+                processRecord(record);
             }
         }
-
     }
+
+    private static void processRecord(String[] record){
+        String repoDir = "repo/" + record[0];
+//        System.out.println(repoDir);
+        File inputFile = new File(repoDir);
+        try {
+            Repository repository = openRepository(record[1]+".git", inputFile);
+            Git git = new Git(repository);
+            processCommit(git, repoDir, record[2]);
+        } catch (Exception e) {
+            System.out.println(e);;
+        }
+    }
+    private static void processCommit(Git git, String repoDir, String commitID) throws GitAPIException, IOException {
+        checkoutRepository(git, commitID);
+        collectMethodSmells(repoDir, commitID);
+//        processCommitList.add(commitID);
+    }
+
+//    private static void processCommit(String repoDir, List<String[]> records, Set<String> processCommitList, String commitID) throws Exception {
+//        String[] result = readCommitRecord(repoDir, records, commitID); // 0:repo_name
+//
+//        List<String> commitList = new ArrayList<>();
+//        commitList.add(commitID);   // commit ID
+//        commitList.add(result[1]);  // parent commit ID
+//
+//        File inputFile = new File(repoDir);
+//        Repository repository = openRepository(result[0], inputFile);
+//        Git git = new Git(repository);
+//
+//
+//        for (String commit : commitList) {
+//            if (!processCommitList.contains(commit)) {
+//                checkoutRepository(git, commit);
+//                collectMethodSmells(repoDir, commit);
+//                processCommitList.add(commit);
+//            }
+//        }
+//
+//    }
 
     public static void detectMappings(String projectDir, String repoName) throws IOException {
         File inputFile = new File(projectDir);
@@ -114,7 +116,6 @@ public class Main {
         FileWalker fw = new FileWalker();
         List<Path> files = fw.getJavaTestFiles(projectDir, true);
         testFiles = new ArrayList<>();
-//        TODO confirm this output
         for (File srcFile : srcFolder) {
             for (Path testPath : files) {
                 mappingDetector = new MappingDetector();
@@ -242,26 +243,26 @@ public class Main {
         System.out.println("Smell Detection Finished");
     }
 
-    private static void processJson(JsonObject jsonObject, List<String[]> records) {
-//      TODO json使う意味ない
-        Set<String> processCommitList = new HashSet<>();
-        List<String> processDirList = new ArrayList<>();
-
-        for (Map.Entry<String, JsonElement> repoEntry : jsonObject.entrySet()) {
-            String repoDir = repoEntry.getKey();
-            JsonObject commitData = repoEntry.getValue().getAsJsonObject();
-            for (Map.Entry<String, JsonElement> commitEntry : commitData.entrySet()) {
-                String commitID = commitEntry.getKey();
-                try {
-//                    TODO recordsだけでいけるのでは？
-                    processCommit(repoDir, records, processCommitList, commitID);
-                    saveRepositoryAndCommit(processDirList, processCommitList);
-                } catch (Exception e) {
-                    continue;
-                }
-            }
-        }
-    }
+//    private static void processJson(JsonObject jsonObject, List<String[]> records) {
+////      TODO json使う意味ない
+//        Set<String> processCommitList = new HashSet<>();
+//        List<String> processDirList = new ArrayList<>();
+//
+//        for (Map.Entry<String, JsonElement> repoEntry : jsonObject.entrySet()) {
+//            String repoDir = repoEntry.getKey();
+//            JsonObject commitData = repoEntry.getValue().getAsJsonObject();
+//            for (Map.Entry<String, JsonElement> commitEntry : commitData.entrySet()) {
+//                String commitID = commitEntry.getKey();
+//                try {
+////                    TODO recordsだけでいけるのでは？
+//                    processCommit(repoDir, records, processCommitList, commitID);
+//                    saveRepositoryAndCommit(processDirList, processCommitList);
+//                } catch (Exception e) {
+//                    continue;
+//                }
+//            }
+//        }
+//    }
 
     private static void saveRepositoryAndCommit(List<String> processDirList, Set<String> processCommitList) {
         String fileName = "test.txt";
