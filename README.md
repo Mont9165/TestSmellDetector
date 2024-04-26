@@ -11,7 +11,10 @@ Test smells are defined as bad programming practices in unit test code (such as 
 The purpose of this project is twofold:
 
 1. Contribute to the list of existing test smells, by proposing new test smells that developers need to be aware of.
-2. Provide developers with a tool to automatically detect test smell in their unit test code. 
+2. Provide developers with a tool to automatically detect test smell in their unit test code.
+
+## Guide
+Use commits_list.csv in the input directory to collect test smelts for the target commit and its parent commit.
 
 ## More Information
 
