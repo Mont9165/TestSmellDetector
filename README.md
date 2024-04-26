@@ -17,6 +17,10 @@ The purpose of this project is twofold:
 
 Visit the project website: https://testsmells.github.io/
 
+## Guide
+Now using branch of feature/collect-multi-repo-smellls
+Use commits_list.csv in the input directory to collect test smelts for the target commit and its parent commit.
+
 ## Execution
 
 Running the jar with `--help` will print its usage.
