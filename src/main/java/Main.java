@@ -19,9 +19,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.DateFormat;
 import java.text.MessageFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 
@@ -29,13 +27,13 @@ public class Main {
     static List<MappingTestFile> testFiles;
 
     public static void main(String[] args) throws IOException, GitAPIException {
-        FileReader csv = new FileReader("input/commits_list.csv");
+        FileReader csv = new FileReader("input/test_refactor_commits.csv");
         CSVReader csvReader = new CSVReaderBuilder(csv).build();
         List<String[]> records = csvReader.readAll();
         processRecords(records);
     }
 
-    private static void processRecords(List<String[]> records) throws GitAPIException, IOException {
+    private static void processRecords(List<String[]> records) {
         for (String[] record : records){
             if (!record[0].equals("repository_name")){
                 processRecord(record);
@@ -51,8 +49,7 @@ public class Main {
             Git git = new Git(repository);
             processCommit(git, repoDir, record[2]); // collect testsmell of child commit
             processCommit(git, repoDir, record[3]); // collect testsmell of parent commit
-        } catch (Exception e) {
-            System.out.println(e);
+        } catch (Exception ignored) {
         }
     }
 
@@ -161,8 +158,8 @@ public class Main {
           Iterate through all test files to detect smells and then write the output
         */
         TestFile tempFile;
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        Date date;
+//        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+//        Date date;
         SmellRecorder smellRecorder = new SmellRecorder();
         for (TestFile file : testFiles) {
             //detect smells
@@ -229,8 +226,7 @@ public class Main {
         try {
             detectMappings(repoDir, repoName);
             detectSmells(repoName);
-        } catch (Exception e) {
-            System.err.println(e);
+        } catch (Exception ignored) {
         }
     }
 
