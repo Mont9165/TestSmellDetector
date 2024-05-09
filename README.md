@@ -14,6 +14,7 @@ The purpose of this project is twofold:
 2. Provide developers with a tool to automatically detect test smell in their unit test code.
 
 ## Guide
+Now using branch of feature/collect-multi-repo-smellls
 Use commits_list.csv in the input directory to collect test smelts for the target commit and its parent commit.
 
 ## More Information
