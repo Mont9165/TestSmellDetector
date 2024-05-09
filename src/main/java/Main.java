@@ -24,10 +24,14 @@ import java.util.*;
 
 
 public class Main {
+    static File file = new File("log.text");
     static List<MappingTestFile> testFiles;
 
     public static void main(String[] args) throws IOException, GitAPIException {
-        FileReader csv = new FileReader("input/test_refactor_commits.csv");
+        System.out.printf(args[0]);
+        System.exit(1);
+
+        FileReader csv = new FileReader(args[1]);
         CSVReader csvReader = new CSVReaderBuilder(csv).build();
         List<String[]> records = csvReader.readAll();
         processRecords(records);
@@ -56,6 +60,9 @@ public class Main {
     private static void processCommit(Git git, String repoDir, String commitID) throws GitAPIException, IOException {
         checkoutRepository(git, commitID);
         collectMethodSmells(repoDir, commitID);
+        try (FileWriter fileWriter = new FileWriter(file)) {
+            fileWriter.write(repoDir + ", " + commitID);
+        }
     }
 
     public static void detectMappings(String projectDir, String repoName) throws IOException {
