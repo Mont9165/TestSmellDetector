@@ -64,8 +64,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
                 <executions>
                     <!-- Replacing default-compile as it is treated specially by maven -->
@@ -108,7 +108,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        testsmell.RunnerKt
+                                        Main
                                     </mainClass>
                                 </manifest>
                             </archive>
@@ -177,12 +177,8 @@
             <artifactId>commons-io</artifactId>
             <version>2.14.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.tsantalis</groupId>
-            <artifactId>refactoring-miner</artifactId>
-            <version>2.3.2</version>
-        </dependency>
 
     </dependencies>
+
 
 </project>

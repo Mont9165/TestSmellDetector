@@ -8,7 +8,6 @@ import testsmell.smell.*;
 import thresholds.Thresholds;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.stream.Collectors;
 public class TestSmellDetector {
 
     private List<AbstractSmell> testSmells;
-    private Thresholds thresholds;
+    private final Thresholds thresholds;
 
     /**
      * Instantiates the various test smell analyzer classes and loads the objects into an list.
@@ -55,10 +54,6 @@ public class TestSmellDetector {
         testSmells.add(new DependentTest(thresholds));
     }
 
-    public void setTestSmells(List<AbstractSmell> testSmells) {
-        this.testSmells = testSmells;
-    }
-
     /**
      * Provides the names of the smells that are being checked for in the code
      *
@@ -78,12 +73,17 @@ public class TestSmellDetector {
         CompilationUnit productionFileCompilationUnit = null;
         FileInputStream testFileInputStream, productionFileInputStream;
 
-        if (!StringUtils.isEmpty(testFile.getTestFilePath())) {
-            testFileInputStream = new FileInputStream(testFile.getTestFilePath());
-            testFileCompilationUnit = JavaParser.parse(testFileInputStream);
-            TypeDeclaration<?> typeDeclaration = testFileCompilationUnit.getTypes().get(0);
-            testFile.setNumberOfTestMethods(typeDeclaration.getMethods().size());
+        try{
+            if (!StringUtils.isEmpty(testFile.getTestFilePath())) {
+                testFileInputStream = new FileInputStream(testFile.getTestFilePath());
+                testFileCompilationUnit = JavaParser.parse(testFileInputStream);
+                TypeDeclaration<?> typeDeclaration = testFileCompilationUnit.getTypes().get(0);
+                testFile.setNumberOfTestMethods(typeDeclaration.getMethods().size());
+            }
+        }catch (Exception e){
+            System.err.println(e);
         }
+
 
         if (!StringUtils.isEmpty(testFile.getProductionFilePath())) {
             productionFileInputStream = new FileInputStream(testFile.getProductionFilePath());
@@ -95,7 +95,7 @@ public class TestSmellDetector {
                 smell.runAnalysis(testFileCompilationUnit, productionFileCompilationUnit,
                         testFile.getTestFileNameWithoutExtension(),
                         testFile.getProductionFileNameWithoutExtension());
-            } catch (FileNotFoundException e) {
+            } catch (Exception e) {
                 testFile.addSmell(null);
                 continue;
             }

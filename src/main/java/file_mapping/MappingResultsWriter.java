@@ -10,13 +10,12 @@ import java.util.List;
  */
 public class MappingResultsWriter {
 
-    private String outputFile;
-    private String repoName;
+    private final String outputFile;
+    private final String repoName;
     private FileWriter writer;
 
     /**
      * Creates the file into which output it to be written into. Results from each file will be stored in a new file
-     * @throws IOException
      */
     private MappingResultsWriter(String repoName) throws IOException {
         this.repoName = repoName;
@@ -28,7 +27,6 @@ public class MappingResultsWriter {
     /**
      * Factory method that provides a new instance of the ResultsWriter
      * @return new ResultsWriter instance
-     * @throws IOException
      */
     public static MappingResultsWriter createResultsWriter(String repoName) throws IOException {
         return new MappingResultsWriter(repoName);
@@ -37,7 +35,6 @@ public class MappingResultsWriter {
     /**
      * Writes column names into the CSV file
      * @param columnNames the column names
-     * @throws IOException
      */
     public void writeColumnName(List<String> columnNames) throws IOException {
         writeOutput(columnNames);
@@ -46,7 +43,6 @@ public class MappingResultsWriter {
     /**
      * Writes column values into the CSV file
      * @param columnValues the column values
-     * @throws IOException
      */
     public void writeLine(List<String> columnValues) throws IOException {
         writeOutput(columnValues);
@@ -55,12 +51,15 @@ public class MappingResultsWriter {
     /**
      * Appends the input values into the CSV file
      * @param dataValues the data that needs to be written into the file
-     * @throws IOException
      */
     private void writeOutput(List<String> dataValues)throws IOException {
         writer = new FileWriter(outputFile,true);
         writer.append(repoName);
         writer.append(",");
+        addLineSeparator(dataValues, writer);
+    }
+
+    public static void addLineSeparator(List<String> dataValues, FileWriter writer) throws IOException {
         for (int i=0; i<dataValues.size(); i++) {
             writer.append(String.valueOf(dataValues.get(i)));
 
