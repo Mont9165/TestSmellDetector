@@ -28,22 +28,13 @@ public class Main {
     static List<MappingTestFile> testFiles;
 
     public static void detectMappings(String projectDir, String srcDir, String repoName) throws IOException {
-        File inputFile = new File(projectDir);
-        if(!inputFile.exists() || !inputFile.isDirectory()) {
-            System.out.println("Please provide a valid path to the project directory");
-            return;
-        }
+        File srcFolder = new File(projectDir);
 
-        File srcFolder;
-        if(!Objects.equals(srcDir, "")){
-            srcFolder = new File(srcDir);
-        } else {
-            srcFolder = new File(inputFile, "src/main");
-        }
         if(!srcFolder.exists() || !srcFolder.isDirectory()) {
             System.out.println("Please provide a valid path to the source directory");
             return;
         }
+
         MappingDetector mappingDetector;
         FileWalker fw = new FileWalker();
         List<Path> files = fw.getJavaTestFiles(projectDir, true);
@@ -151,43 +142,50 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, GitAPIException {
-        System.out.println(Arrays.toString(args));
         if (args == null || args.length == 0) {
-            System.out.println("Please provide the path to the project directory");
+            System.out.println("Please provide the commit URL.");
             return;
         }
-        String projectDir = args[0];
-        String srcDir = args[1];
-        String commitID = args[2];
 
-        String repoName = projectDir.substring(projectDir.lastIndexOf("repos/")+6) + "/" + commitID;
+        String commitURL = args[0];
+        String[] split = commitURL.split("/commit/");
+        String repositoryURL = split[0];
+        String commitID = split[1];
 
-        Files.createDirectories(Paths.get("results/mappings/" + repoName));
-        Files.createDirectories(Paths.get("results/smells/" + repoName));
+        String repositoryOwnerAndName = repositoryURL.replace("https://github.com/", "");
+        String repositoryOwnerAndNameAndCommit = repositoryOwnerAndName + "/" + commitID;
 
-        Repository repository = openRepository(new File(projectDir));
+        Path projectDir = Paths.get("repos", repositoryOwnerAndName);
+        Path mappingResultsDir = Paths.get("results/mappings", repositoryOwnerAndNameAndCommit);
+        Path smellResultsDir = Paths.get("results/smells", repositoryOwnerAndNameAndCommit);
+
+        Files.createDirectories(mappingResultsDir);
+        Files.createDirectories(smellResultsDir);
+
+        Repository repository = openRepository(projectDir.toFile(), repositoryURL);
         Git git = new Git(repository);
         checkoutRepository(git, commitID);
 
-        detectMappings(projectDir, srcDir, repoName);
-        detectSmells(repoName);
+        detectMappings(projectDir.toString(), "", repositoryOwnerAndNameAndCommit);
+        detectSmells(repositoryOwnerAndNameAndCommit);
     }
 
-    private static Repository openRepository(File inputFile) throws IOException, GitAPIException {
+    private static Repository openRepository(File inputFile, String repositoryURL) throws IOException, GitAPIException {
         try {
             return Git.open(inputFile).getRepository();
         } catch (Exception e) {
             FileUtils.deleteDirectory(inputFile);
             System.out.println("Clone Repository");
-            cloneRepository(inputFile.toString());
+            cloneRepository(inputFile, repositoryURL);
             return Git.open(inputFile).getRepository();
         }
     }
 
-    private static void cloneRepository(String targetDirectory) throws GitAPIException {
+    private static void cloneRepository(File targetDirectory,String repositoryURL) throws GitAPIException {
+        System.out.println();
         Git.cloneRepository()
-                .setURI("")
-                .setDirectory(Paths.get(targetDirectory).toFile())
+                .setURI(repositoryURL)
+                .setDirectory(Paths.get(targetDirectory.toURI()).toFile())
                 .call();
     }
 
